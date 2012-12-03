@@ -26,31 +26,31 @@ public class Address
 	
 	public String getCity () 
 	{
-			
+		return this.city;	
 	}
 
 	
 	public String getCountry () 
 	{
-			
+		return this.country;	
 	}
 
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
 	public String getLine1 () 
 	{
-			
+		return this.line1;	
 	}
 
 	
 	public String getLine2 () 
 	{
-			
+		return this.line2;	
 	}
 
 	

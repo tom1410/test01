@@ -20,19 +20,19 @@ public class Product
 	
 	public String getDescription () 
 	{
-			
+		return this.description;	
 	}
 
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
 	public String getName () 
 	{
-			
+		return this.name;	
 	}
 
 	

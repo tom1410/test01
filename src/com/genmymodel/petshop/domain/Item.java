@@ -23,25 +23,25 @@ public class Item
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
 	public Double getPrice () 
 	{
-			
+		return this.price;	
 	}
 
 	
 	public Product getProduct () 
 	{
-			
+		return this.product;	
 	}
 
 	
 	public String getQuantity () 
 	{
-			
+		return this.quantity;	
 	}
 
 	

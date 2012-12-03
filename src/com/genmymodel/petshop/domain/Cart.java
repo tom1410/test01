@@ -42,25 +42,25 @@ public class Cart
 	
 	public Boolean getActive () 
 	{
-			
+		return this.active;	
 	}
 
 	
 	public java.util.Date getCreationDate () 
 	{
-			
+		return this.creationDate;	
 	}
 
 	
 	public Customer getCustomer () 
 	{
-			
+		return this.customer;	
 	}
 
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
@@ -76,7 +76,7 @@ public class Cart
 	
 	public Order getOrder () 
 	{
-			
+		return this.order;	
 	}
 
 	

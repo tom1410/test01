@@ -43,31 +43,31 @@ public class Customer
 	
 	public Address getAddress () 
 	{
-			
+		return this.address;	
 	}
 
 	
 	public Cart getCarts () 
 	{
-			
+		return this.carts;	
 	}
 
 	
 	public String getFirstName () 
 	{
-			
+		return this.firstName;	
 	}
 
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
 	public String getLastName () 
 	{
-			
+		return this.lastName;	
 	}
 
 	

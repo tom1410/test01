@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.List;
 import java.util.Set;
+import java.util.List;
 import com.genmymodel.petshop.domain.OrderStatus;
 
 
@@ -52,31 +52,31 @@ public class Order
 	
 	public Cart getCart () 
 	{
-			
+		return this.cart;	
 	}
 
 	
 	public Customer getCustomer () 
 	{
-			
+		return this.customer;	
 	}
 
 	
 	public String getDate () 
 	{
-			
+		return this.date;	
 	}
 
 	
 	public Address getDeliveryAddress () 
 	{
-			
+		return this.deliveryAddress;	
 	}
 
 	
 	public Long getId () 
 	{
-			
+		return this.id;	
 	}
 
 	
@@ -92,19 +92,19 @@ public class Order
 	
 	public Address getPaymentAddress () 
 	{
-			
+		return this.paymentAddress;	
 	}
 
 	
 	public String getReference () 
 	{
-			
+		return this.reference;	
 	}
 
 	
 	public OrderStatus getStatus () 
 	{
-			
+		return this.status;	
 	}
 
 	
