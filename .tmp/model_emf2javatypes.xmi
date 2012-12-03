@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:accessors="http://com.axellience.standalonegens/emf2java/emfaccessors" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience.standalonegens/emf2java/emf4java" xsi:schemaLocation="http://com.axellience.standalonegens/emf2java/emfaccessors file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java//bin/com/axellience/generator/emf2java/metamodels/accessors.ecore http://com.axellience.standalonegens/emf2java/emf4java file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java//bin/com/axellience/generator/emf2java/metamodels/emf4java.ecore" name="com" nsPrefix="com.genmymodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Set&lt;Order>" abstract="true">
+    <eAnnotations source="import">
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/Set"/>
+    </eAnnotations>
+    <eTypeParameters name="Order">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Order"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List&lt;Order>" abstract="true">
+    <eAnnotations source="import">
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/List"/>
+    </eAnnotations>
+    <eTypeParameters name="Order">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Order"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List&lt;Item>" abstract="true">
+    <eAnnotations source="import">
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/List"/>
+    </eAnnotations>
+    <eTypeParameters name="Item">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Item"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Set&lt;Item>" abstract="true">
+    <eAnnotations source="import">
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/Set"/>
+    </eAnnotations>
+    <eTypeParameters name="Item">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Item"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eSubpackages name="genmymodel">
+    <eSubpackages name="petshop">
+      <eSubpackages name="domain">
+        <eClassifiers xsi:type="emf4java:Entity" name="Product">
+          <eOperations xsi:type="accessors:Getter" name="getName" property="//genmymodel/petshop/domain/Product/name" setter="//genmymodel/petshop/domain/Product/setName">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getDescription" property="//genmymodel/petshop/domain/Product/description" setter="//genmymodel/petshop/domain/Product/setDescription">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Product/id" setter="//genmymodel/petshop/domain/Product/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setName" property="//genmymodel/petshop/domain/Product/name" reverse="//genmymodel/petshop/domain/Product/unsetName" getter="//genmymodel/petshop/domain/Product/getName">
+            <eParameters name="myName">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setDescription" property="//genmymodel/petshop/domain/Product/description" reverse="//genmymodel/petshop/domain/Product/unsetDescription" getter="//genmymodel/petshop/domain/Product/getDescription">
+            <eParameters name="myDescription">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Product/id" reverse="//genmymodel/petshop/domain/Product/unsetId" getter="//genmymodel/petshop/domain/Product/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetName" property="//genmymodel/petshop/domain/Product/name" reverse="//genmymodel/petshop/domain/Product/setName"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetDescription" property="//genmymodel/petshop/domain/Product/description" reverse="//genmymodel/petshop/domain/Product/setDescription"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Product/id" reverse="//genmymodel/petshop/domain/Product/setId"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Item">
+          <eOperations xsi:type="accessors:Getter" name="getPrice" property="//genmymodel/petshop/domain/Item/price" setter="//genmymodel/petshop/domain/Item/setPrice">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getQuantity" property="//genmymodel/petshop/domain/Item/quantity" setter="//genmymodel/petshop/domain/Item/setQuantity">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Item/id" setter="//genmymodel/petshop/domain/Item/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setPrice" property="//genmymodel/petshop/domain/Item/price" reverse="//genmymodel/petshop/domain/Item/unsetPrice" getter="//genmymodel/petshop/domain/Item/getPrice">
+            <eParameters name="myPrice">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setQuantity" property="//genmymodel/petshop/domain/Item/quantity" reverse="//genmymodel/petshop/domain/Item/unsetQuantity" getter="//genmymodel/petshop/domain/Item/getQuantity">
+            <eParameters name="myQuantity">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Item/id" reverse="//genmymodel/petshop/domain/Item/unsetId" getter="//genmymodel/petshop/domain/Item/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetPrice" property="//genmymodel/petshop/domain/Item/price" reverse="//genmymodel/petshop/domain/Item/setPrice"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetQuantity" property="//genmymodel/petshop/domain/Item/quantity" reverse="//genmymodel/petshop/domain/Item/setQuantity"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Item/id" reverse="//genmymodel/petshop/domain/Item/setId"/>
+          <eOperations xsi:type="accessors:Getter" name="getProduct" lowerBound="1" eType="//genmymodel/petshop/domain/Product" property="//genmymodel/petshop/domain/Item/product" setter="//genmymodel/petshop/domain/Item/setProduct"/>
+          <eOperations xsi:type="accessors:Setter" name="setProduct" property="//genmymodel/petshop/domain/Item/product" reverse="//genmymodel/petshop/domain/Item/unsetProduct" getter="//genmymodel/petshop/domain/Item/getProduct">
+            <eParameters name="myProduct" eType="//genmymodel/petshop/domain/Product"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetProduct" property="//genmymodel/petshop/domain/Item/product" reverse="//genmymodel/petshop/domain/Item/setProduct"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="price">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1" eType="//genmymodel/petshop/domain/Product"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Customer">
+          <eOperations xsi:type="accessors:Getter" name="getFirstName" property="//genmymodel/petshop/domain/Customer/firstName" setter="//genmymodel/petshop/domain/Customer/setFirstName">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getLastName" property="//genmymodel/petshop/domain/Customer/lastName" setter="//genmymodel/petshop/domain/Customer/setLastName">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Customer/id" setter="//genmymodel/petshop/domain/Customer/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setFirstName" property="//genmymodel/petshop/domain/Customer/firstName" reverse="//genmymodel/petshop/domain/Customer/unsetFirstName" getter="//genmymodel/petshop/domain/Customer/getFirstName">
+            <eParameters name="myFirstName">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setLastName" property="//genmymodel/petshop/domain/Customer/lastName" reverse="//genmymodel/petshop/domain/Customer/unsetLastName" getter="//genmymodel/petshop/domain/Customer/getLastName">
+            <eParameters name="myLastName">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Customer/id" reverse="//genmymodel/petshop/domain/Customer/unsetId" getter="//genmymodel/petshop/domain/Customer/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetFirstName" property="//genmymodel/petshop/domain/Customer/firstName" reverse="//genmymodel/petshop/domain/Customer/setFirstName"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetLastName" property="//genmymodel/petshop/domain/Customer/lastName" reverse="//genmymodel/petshop/domain/Customer/setLastName"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Customer/id" reverse="//genmymodel/petshop/domain/Customer/setId"/>
+          <eOperations xsi:type="accessors:Getter" name="getAddress" eType="//genmymodel/petshop/domain/Address" property="//genmymodel/petshop/domain/Customer/address" setter="//genmymodel/petshop/domain/Customer/setAddress"/>
+          <eOperations xsi:type="accessors:Getter" name="getCarts" eType="//genmymodel/petshop/domain/Cart" property="//genmymodel/petshop/domain/Customer/carts" setter="//genmymodel/petshop/domain/Customer/setCarts"/>
+          <eOperations xsi:type="accessors:GetterAsList" name="getOrders" unique="false" eType="//List%3COrder%3E" property="//genmymodel/petshop/domain/Customer/orders"/>
+          <eOperations xsi:type="accessors:Setter" name="setAddress" property="//genmymodel/petshop/domain/Customer/address" reverse="//genmymodel/petshop/domain/Customer/unsetAddress" getter="//genmymodel/petshop/domain/Customer/getAddress">
+            <eParameters name="myAddress" eType="//genmymodel/petshop/domain/Address"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCarts" property="//genmymodel/petshop/domain/Customer/carts" opposite="//genmymodel/petshop/domain/Cart/setCustomer" reverse="//genmymodel/petshop/domain/Customer/unsetCarts" getter="//genmymodel/petshop/domain/Customer/getCarts">
+            <eParameters name="myCarts" eType="//genmymodel/petshop/domain/Cart"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Adder" name="addOrders" property="//genmymodel/petshop/domain/Customer/orders" opposite="//genmymodel/petshop/domain/Order/setCustomer" reverse="//genmymodel/petshop/domain/Customer/removeOrders">
+            <eParameters name="newOrders" eType="//genmymodel/petshop/domain/Order"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetAddress" property="//genmymodel/petshop/domain/Customer/address" reverse="//genmymodel/petshop/domain/Customer/setAddress"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCarts" property="//genmymodel/petshop/domain/Customer/carts" opposite="//genmymodel/petshop/domain/Cart/unsetCustomer" reverse="//genmymodel/petshop/domain/Customer/setCarts"/>
+          <eOperations xsi:type="accessors:Remover" name="removeOrders" property="//genmymodel/petshop/domain/Customer/orders" reverse="//genmymodel/petshop/domain/Customer/addOrders">
+            <eParameters name="oldOrders" eType="//genmymodel/petshop/domain/Order"/>
+          </eOperations>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstName">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastName">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="//genmymodel/petshop/domain/Address" containment="true"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="carts" eType="//genmymodel/petshop/domain/Cart" containment="true" eOpposite="//genmymodel/petshop/domain/Cart/customer"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="orders" eType="//Set%3COrder%3E" containment="true" eOpposite="//genmymodel/petshop/domain/Order/customer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+          <imports value="java.util.Set"/>
+          <imports value="java.util.List"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Address">
+          <eOperations xsi:type="accessors:Getter" name="getLine1" property="//genmymodel/petshop/domain/Address/line1" setter="//genmymodel/petshop/domain/Address/setLine1">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getLine2" property="//genmymodel/petshop/domain/Address/line2" setter="//genmymodel/petshop/domain/Address/setLine2">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getCity" property="//genmymodel/petshop/domain/Address/city" setter="//genmymodel/petshop/domain/Address/setCity">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getCountry" property="//genmymodel/petshop/domain/Address/country" setter="//genmymodel/petshop/domain/Address/setCountry">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Address/id" setter="//genmymodel/petshop/domain/Address/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setLine1" property="//genmymodel/petshop/domain/Address/line1" reverse="//genmymodel/petshop/domain/Address/unsetLine1" getter="//genmymodel/petshop/domain/Address/getLine1">
+            <eParameters name="myLine1">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setLine2" property="//genmymodel/petshop/domain/Address/line2" reverse="//genmymodel/petshop/domain/Address/unsetLine2" getter="//genmymodel/petshop/domain/Address/getLine2">
+            <eParameters name="myLine2">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCity" property="//genmymodel/petshop/domain/Address/city" reverse="//genmymodel/petshop/domain/Address/unsetCity" getter="//genmymodel/petshop/domain/Address/getCity">
+            <eParameters name="myCity">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCountry" property="//genmymodel/petshop/domain/Address/country" reverse="//genmymodel/petshop/domain/Address/unsetCountry" getter="//genmymodel/petshop/domain/Address/getCountry">
+            <eParameters name="myCountry">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Address/id" reverse="//genmymodel/petshop/domain/Address/unsetId" getter="//genmymodel/petshop/domain/Address/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetLine1" property="//genmymodel/petshop/domain/Address/line1" reverse="//genmymodel/petshop/domain/Address/setLine1"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetLine2" property="//genmymodel/petshop/domain/Address/line2" reverse="//genmymodel/petshop/domain/Address/setLine2"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCity" property="//genmymodel/petshop/domain/Address/city" reverse="//genmymodel/petshop/domain/Address/setCity"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCountry" property="//genmymodel/petshop/domain/Address/country" reverse="//genmymodel/petshop/domain/Address/setCountry"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Address/id" reverse="//genmymodel/petshop/domain/Address/setId"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="line1">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="line2">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="city">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="country">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Cart">
+          <eOperations xsi:type="accessors:Getter" name="getCreationDate" property="//genmymodel/petshop/domain/Cart/creationDate" setter="//genmymodel/petshop/domain/Cart/setCreationDate">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getActive" property="//genmymodel/petshop/domain/Cart/active" setter="//genmymodel/petshop/domain/Cart/setActive">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Cart/id" setter="//genmymodel/petshop/domain/Cart/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCreationDate" property="//genmymodel/petshop/domain/Cart/creationDate" reverse="//genmymodel/petshop/domain/Cart/unsetCreationDate" getter="//genmymodel/petshop/domain/Cart/getCreationDate">
+            <eParameters name="myCreationDate">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setActive" property="//genmymodel/petshop/domain/Cart/active" getter="//genmymodel/petshop/domain/Cart/getActive">
+            <eParameters name="myActive">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Cart/id" reverse="//genmymodel/petshop/domain/Cart/unsetId" getter="//genmymodel/petshop/domain/Cart/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCreationDate" property="//genmymodel/petshop/domain/Cart/creationDate" reverse="//genmymodel/petshop/domain/Cart/setCreationDate"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Cart/id" reverse="//genmymodel/petshop/domain/Cart/setId"/>
+          <eOperations xsi:type="accessors:Getter" name="getCustomer" lowerBound="1" eType="//genmymodel/petshop/domain/Customer" property="//genmymodel/petshop/domain/Cart/customer" setter="//genmymodel/petshop/domain/Cart/setCustomer"/>
+          <eOperations xsi:type="accessors:Getter" name="getOrder" eType="//genmymodel/petshop/domain/Order" property="//genmymodel/petshop/domain/Cart/order" setter="//genmymodel/petshop/domain/Cart/setOrder"/>
+          <eOperations xsi:type="accessors:GetterAsList" name="getItems" unique="false" eType="//List%3CItem%3E" property="//genmymodel/petshop/domain/Cart/items"/>
+          <eOperations xsi:type="accessors:Adder" name="addItems" property="//genmymodel/petshop/domain/Cart/items" reverse="//genmymodel/petshop/domain/Cart/removeItems">
+            <eParameters name="newItems" eType="//genmymodel/petshop/domain/Item"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCustomer" property="//genmymodel/petshop/domain/Cart/customer" opposite="//genmymodel/petshop/domain/Customer/setCarts" reverse="//genmymodel/petshop/domain/Cart/unsetCustomer" getter="//genmymodel/petshop/domain/Cart/getCustomer">
+            <eParameters name="myCustomer" eType="//genmymodel/petshop/domain/Customer"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setOrder" property="//genmymodel/petshop/domain/Cart/order" opposite="//genmymodel/petshop/domain/Order/setCart" reverse="//genmymodel/petshop/domain/Cart/unsetOrder" getter="//genmymodel/petshop/domain/Cart/getOrder">
+            <eParameters name="myOrder" eType="//genmymodel/petshop/domain/Order"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Remover" name="removeItems" property="//genmymodel/petshop/domain/Cart/items" reverse="//genmymodel/petshop/domain/Cart/addItems">
+            <eParameters name="oldItems" eType="//genmymodel/petshop/domain/Item"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCustomer" property="//genmymodel/petshop/domain/Cart/customer" opposite="//genmymodel/petshop/domain/Customer/unsetCarts" reverse="//genmymodel/petshop/domain/Cart/setCustomer"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetOrder" property="//genmymodel/petshop/domain/Cart/order" opposite="//genmymodel/petshop/domain/Order/unsetCart" reverse="//genmymodel/petshop/domain/Cart/setOrder"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="items" lowerBound="1" eType="//Set%3CItem%3E" containment="true"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1" eType="//genmymodel/petshop/domain/Customer" eOpposite="//genmymodel/petshop/domain/Customer/carts"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="order" eType="//genmymodel/petshop/domain/Order" eOpposite="//genmymodel/petshop/domain/Order/cart"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="active">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+          <imports value="java.util.List"/>
+          <imports value="java.util.Set"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Order">
+          <eOperations xsi:type="accessors:Getter" name="getReference" property="//genmymodel/petshop/domain/Order/reference" setter="//genmymodel/petshop/domain/Order/setReference">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getDate" property="//genmymodel/petshop/domain/Order/date" setter="//genmymodel/petshop/domain/Order/setDate">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getStatus" eType="//genmymodel/petshop/domain/OrderStatus" property="//genmymodel/petshop/domain/Order/status" setter="//genmymodel/petshop/domain/Order/setStatus"/>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//genmymodel/petshop/domain/Order/id" setter="//genmymodel/petshop/domain/Order/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setReference" property="//genmymodel/petshop/domain/Order/reference" reverse="//genmymodel/petshop/domain/Order/unsetReference" getter="//genmymodel/petshop/domain/Order/getReference">
+            <eParameters name="myReference">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setDate" property="//genmymodel/petshop/domain/Order/date" reverse="//genmymodel/petshop/domain/Order/unsetDate" getter="//genmymodel/petshop/domain/Order/getDate">
+            <eParameters name="myDate">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setStatus" property="//genmymodel/petshop/domain/Order/status" reverse="//genmymodel/petshop/domain/Order/unsetStatus" getter="//genmymodel/petshop/domain/Order/getStatus">
+            <eParameters name="myStatus" eType="//genmymodel/petshop/domain/OrderStatus"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//genmymodel/petshop/domain/Order/id" reverse="//genmymodel/petshop/domain/Order/unsetId" getter="//genmymodel/petshop/domain/Order/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetReference" property="//genmymodel/petshop/domain/Order/reference" reverse="//genmymodel/petshop/domain/Order/setReference"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetDate" property="//genmymodel/petshop/domain/Order/date" reverse="//genmymodel/petshop/domain/Order/setDate"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetStatus" property="//genmymodel/petshop/domain/Order/status" reverse="//genmymodel/petshop/domain/Order/setStatus"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//genmymodel/petshop/domain/Order/id" reverse="//genmymodel/petshop/domain/Order/setId"/>
+          <eOperations xsi:type="accessors:Getter" name="getCart" eType="//genmymodel/petshop/domain/Cart" property="//genmymodel/petshop/domain/Order/cart" setter="//genmymodel/petshop/domain/Order/setCart"/>
+          <eOperations xsi:type="accessors:Getter" name="getCustomer" lowerBound="1" eType="//genmymodel/petshop/domain/Customer" property="//genmymodel/petshop/domain/Order/customer" setter="//genmymodel/petshop/domain/Order/setCustomer"/>
+          <eOperations xsi:type="accessors:Getter" name="getDeliveryAddress" lowerBound="1" eType="//genmymodel/petshop/domain/Address" property="//genmymodel/petshop/domain/Order/deliveryAddress" setter="//genmymodel/petshop/domain/Order/setDeliveryAddress"/>
+          <eOperations xsi:type="accessors:Getter" name="getPaymentAddress" lowerBound="1" eType="//genmymodel/petshop/domain/Address" property="//genmymodel/petshop/domain/Order/paymentAddress" setter="//genmymodel/petshop/domain/Order/setPaymentAddress"/>
+          <eOperations xsi:type="accessors:GetterAsList" name="getItems" unique="false" eType="//List%3CItem%3E" property="//genmymodel/petshop/domain/Order/items"/>
+          <eOperations xsi:type="accessors:Setter" name="setCart" property="//genmymodel/petshop/domain/Order/cart" opposite="//genmymodel/petshop/domain/Cart/setOrder" reverse="//genmymodel/petshop/domain/Order/unsetCart" getter="//genmymodel/petshop/domain/Order/getCart">
+            <eParameters name="myCart" eType="//genmymodel/petshop/domain/Cart"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Adder" name="addItems" property="//genmymodel/petshop/domain/Order/items" reverse="//genmymodel/petshop/domain/Order/removeItems">
+            <eParameters name="newItems" eType="//genmymodel/petshop/domain/Item"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setCustomer" property="//genmymodel/petshop/domain/Order/customer" opposite="//genmymodel/petshop/domain/Customer/addOrders" reverse="//genmymodel/petshop/domain/Order/unsetCustomer" getter="//genmymodel/petshop/domain/Order/getCustomer">
+            <eParameters name="myCustomer" eType="//genmymodel/petshop/domain/Customer"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setDeliveryAddress" property="//genmymodel/petshop/domain/Order/deliveryAddress" reverse="//genmymodel/petshop/domain/Order/unsetDeliveryAddress" getter="//genmymodel/petshop/domain/Order/getDeliveryAddress">
+            <eParameters name="myDeliveryAddress" eType="//genmymodel/petshop/domain/Address"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setPaymentAddress" property="//genmymodel/petshop/domain/Order/paymentAddress" reverse="//genmymodel/petshop/domain/Order/unsetPaymentAddress" getter="//genmymodel/petshop/domain/Order/getPaymentAddress">
+            <eParameters name="myPaymentAddress" eType="//genmymodel/petshop/domain/Address"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCart" property="//genmymodel/petshop/domain/Order/cart" opposite="//genmymodel/petshop/domain/Cart/unsetOrder" reverse="//genmymodel/petshop/domain/Order/setCart"/>
+          <eOperations xsi:type="accessors:Remover" name="removeItems" property="//genmymodel/petshop/domain/Order/items" reverse="//genmymodel/petshop/domain/Order/addItems">
+            <eParameters name="oldItems" eType="//genmymodel/petshop/domain/Item"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetCustomer" property="//genmymodel/petshop/domain/Order/customer" opposite="//genmymodel/petshop/domain/Customer/removeOrders" reverse="//genmymodel/petshop/domain/Order/setCustomer"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetDeliveryAddress" property="//genmymodel/petshop/domain/Order/deliveryAddress" reverse="//genmymodel/petshop/domain/Order/setDeliveryAddress"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetPaymentAddress" property="//genmymodel/petshop/domain/Order/paymentAddress" reverse="//genmymodel/petshop/domain/Order/setPaymentAddress"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="reference">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="date">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="cart" eType="//genmymodel/petshop/domain/Cart" eOpposite="//genmymodel/petshop/domain/Cart/order"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="items" lowerBound="1" eType="//Set%3CItem%3E"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1" eType="//genmymodel/petshop/domain/Customer" eOpposite="//genmymodel/petshop/domain/Customer/orders"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="deliveryAddress" lowerBound="1" eType="//genmymodel/petshop/domain/Address"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="paymentAddress" lowerBound="1" eType="//genmymodel/petshop/domain/Address"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="//genmymodel/petshop/domain/OrderStatus"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+          <imports value="java.util.List"/>
+          <imports value="java.util.Set"/>
+          <imports value="com.genmymodel.petshop.domain.OrderStatus"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="emf4java:Entity" name="Food" eSuperTypes="//genmymodel/petshop/domain/Product"/>
+        <eClassifiers xsi:type="emf4java:Entity" name="Toy" eSuperTypes="//genmymodel/petshop/domain/Product"/>
+        <eClassifiers xsi:type="ecore:EEnum" name="OrderStatus">
+          <eLiterals name="preparation"/>
+          <eLiterals name="sent" value="1"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>
