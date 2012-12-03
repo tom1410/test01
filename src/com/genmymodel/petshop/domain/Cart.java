@@ -31,139 +31,126 @@ public class Cart
 	
 	public void addItems (Item newItems) 
 	{
-		if(this.items==null) {
-			this.items= new java.util.HashSet<Item>();
-		}
-			
-		this.items.add (newItems);
+		// TODO : to implement
 			
 	}
 
 	
 	public Boolean getActive () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public java.util.Date getCreationDate () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public Customer getCustomer () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public Long getId () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public List<Item> getItems () 
 	{
-		if(this.items==null) {
-			this.items= new java.util.HashSet<Item>();
-		}
-		return java.util.Collections.unmodifiableList
-					(new java.util.ArrayList<Item>(this.items));	
+		// TODO : to implement
+		return ;
+			
 	}
 
 	
 	public Order getOrder () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public void removeItems (Item oldItems) 
 	{
-		if(this.items==null) {
-			return;
-		}
-		
-		this.items.remove (oldItems);
+		// TODO : to implement
 			
 	}
 
 	
 	public void setActive (Boolean myActive) 
 	{
-		this.active = myActive;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setCreationDate (java.util.Date myCreationDate) 
 	{
-		this.creationDate = myCreationDate;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setCustomer (Customer myCustomer) 
 	{
-		if (this.customer != myCustomer) {
-			Customer oldcustomer = this.customer;
-			this.customer = myCustomer;
-			if (oldcustomer != null)
-				oldcustomer.unsetCarts ();
-			if (myCustomer != null)
-				myCustomer.setCarts (this);
-		}	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		this.id = myId;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setOrder (Order myOrder) 
 	{
-		if (this.order != myOrder) {
-			Order oldorder = this.order;
-			this.order = myOrder;
-			if (oldorder != null)
-				oldorder.unsetCart ();
-			if (myOrder != null)
-				myOrder.setCart (this);
-		}	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetCreationDate () 
 	{
-		this.creationDate = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetCustomer () 
 	{
-		if (this.customer == null)
-			return;
-		Customer oldcustomer = this.customer;
-		this.customer = null;
-		oldcustomer.unsetCarts ();	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetId () 
 	{
-		this.id = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetOrder () 
 	{
-		if (this.order == null)
-			return;
-		Order oldorder = this.order;
-		this.order = null;
-		oldorder.unsetCart ();	
+		// TODO : to implement
+			
 	}
 
 

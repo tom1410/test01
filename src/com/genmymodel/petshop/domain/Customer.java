@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 
 
 
@@ -31,135 +31,133 @@ public class Customer
 	
 	public void addOrders (Order newOrders) 
 	{
-		if(this.orders==null) {
-			this.orders= new java.util.HashSet<Order>();
-		}
-			
-		if (this.orders.add (newOrders))
-			newOrders.setCustomer (this);
+		// TODO : to implement
 			
 	}
 
 	
 	public Address getAddress () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public Cart getCarts () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public String getFirstName () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public Long getId () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public String getLastName () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public List<Order> getOrders () 
 	{
-		if(this.orders==null) {
-			this.orders= new java.util.HashSet<Order>();
-		}
-		return java.util.Collections.unmodifiableList
-					(new java.util.ArrayList<Order>(this.orders));	
+		// TODO : to implement
+		return ;
+			
 	}
 
 	
 	public void removeOrders (Order oldOrders) 
 	{
-		if(this.orders==null) {
-			return;
-		}
-		
-		this.orders.remove (oldOrders);
+		// TODO : to implement
 			
 	}
 
 	
 	public void setAddress (Address myAddress) 
 	{
-		this.address = myAddress;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setCarts (Cart myCarts) 
 	{
-		if (this.carts != myCarts) {
-			Cart oldcarts = this.carts;
-			this.carts = myCarts;
-			if (oldcarts != null)
-				oldcarts.unsetCustomer ();
-			if (myCarts != null)
-				myCarts.setCustomer (this);
-		}	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setFirstName (String myFirstName) 
 	{
-		this.firstName = myFirstName;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		this.id = myId;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setLastName (String myLastName) 
 	{
-		this.lastName = myLastName;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetAddress () 
 	{
-		this.address = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetCarts () 
 	{
-		if (this.carts == null)
-			return;
-		Cart oldcarts = this.carts;
-		this.carts = null;
-		oldcarts.unsetCustomer ();	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetFirstName () 
 	{
-		this.firstName = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetId () 
 	{
-		this.id = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetLastName () 
 	{
-		this.lastName = null;	
+		// TODO : to implement
+			
 	}
 
 

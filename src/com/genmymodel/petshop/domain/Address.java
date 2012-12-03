@@ -26,91 +26,111 @@ public class Address
 	
 	public String getCity () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public String getCountry () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public Long getId () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public String getLine1 () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public String getLine2 () 
 	{
+		// TODO : to implement
+		return ;
 			
 	}
 
 	
 	public void setCity (String myCity) 
 	{
-		this.city = myCity;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setCountry (String myCountry) 
 	{
-		this.country = myCountry;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		this.id = myId;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setLine1 (String myLine1) 
 	{
-		this.line1 = myLine1;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void setLine2 (String myLine2) 
 	{
-		this.line2 = myLine2;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetCity () 
 	{
-		this.city = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetCountry () 
 	{
-		this.country = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetId () 
 	{
-		this.id = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetLine1 () 
 	{
-		this.line1 = null;	
+		// TODO : to implement
+			
 	}
 
 	
 	public void unsetLine2 () 
 	{
-		this.line2 = null;	
+		// TODO : to implement
+			
 	}
 
 
