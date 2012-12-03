@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:accessors="http://com.axellience.standalonegens/emf2java/emfaccessors" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience.standalonegens/emf2java/emf4java" xsi:schemaLocation="http://com.axellience.standalonegens/emf2java/emfaccessors file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java//bin/com/axellience/generator/emf2java/metamodels/accessors.ecore http://com.axellience.standalonegens/emf2java/emf4java file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java//bin/com/axellience/generator/emf2java/metamodels/emf4java.ecore" name="com" nsPrefix="com.genmymodel">
-  <eClassifiers xsi:type="ecore:EClass" name="Set&lt;Order>" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="List&lt;Item>" abstract="true">
     <eAnnotations source="import">
-      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/Set"/>
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/List"/>
     </eAnnotations>
-    <eTypeParameters name="Order">
-      <eAnnotations source="import" references="//genmymodel/petshop/domain/Order"/>
+    <eTypeParameters name="Item">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Item"/>
     </eTypeParameters>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="List&lt;Order>" abstract="true">
@@ -16,20 +16,20 @@
       <eAnnotations source="import" references="//genmymodel/petshop/domain/Order"/>
     </eTypeParameters>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="List&lt;Item>" abstract="true">
-    <eAnnotations source="import">
-      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/List"/>
-    </eAnnotations>
-    <eTypeParameters name="Item">
-      <eAnnotations source="import" references="//genmymodel/petshop/domain/Item"/>
-    </eTypeParameters>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Set&lt;Item>" abstract="true">
     <eAnnotations source="import">
       <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/Set"/>
     </eAnnotations>
     <eTypeParameters name="Item">
       <eAnnotations source="import" references="//genmymodel/petshop/domain/Item"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Set&lt;Order>" abstract="true">
+    <eAnnotations source="import">
+      <references href="file:/data/axellience/software/mdfactory/workspaces/packaging/genmymodel-refonteRunConfigNov2012//com.axellience.generator.emf2java/data/JavaPrimitiveTypes.library.ecore#//util/Set"/>
+    </eAnnotations>
+    <eTypeParameters name="Order">
+      <eAnnotations source="import" references="//genmymodel/petshop/domain/Order"/>
     </eTypeParameters>
   </eClassifiers>
   <eSubpackages name="genmymodel">
@@ -174,8 +174,8 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
             <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
           </eStructuralFeatures>
-          <imports value="java.util.Set"/>
           <imports value="java.util.List"/>
+          <imports value="java.util.Set"/>
         </eClassifiers>
         <eClassifiers xsi:type="emf4java:Entity" name="Address">
           <eOperations xsi:type="accessors:Getter" name="getLine1" property="//genmymodel/petshop/domain/Address/line1" setter="//genmymodel/petshop/domain/Address/setLine1">
@@ -373,8 +373,8 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
             <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
           </eStructuralFeatures>
-          <imports value="java.util.List"/>
           <imports value="java.util.Set"/>
+          <imports value="java.util.List"/>
           <imports value="com.genmymodel.petshop.domain.OrderStatus"/>
         </eClassifiers>
         <eClassifiers xsi:type="emf4java:Entity" name="Food" eSuperTypes="//genmymodel/petshop/domain/Product"/>
