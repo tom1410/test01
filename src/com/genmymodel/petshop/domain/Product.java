@@ -20,67 +20,55 @@ public class Product
 	
 	public String getDescription () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Long getId () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public String getName () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public void setDescription (String myDescription) 
 	{
-		// TODO : to implement
-			
+		this.description = myDescription;	
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		// TODO : to implement
-			
+		this.id = myId;	
 	}
 
 	
 	public void setName (String myName) 
 	{
-		// TODO : to implement
-			
+		this.name = myName;	
 	}
 
 	
 	public void unsetDescription () 
 	{
-		// TODO : to implement
-			
+		this.description = null;	
 	}
 
 	
 	public void unsetId () 
 	{
-		// TODO : to implement
-			
+		this.id = null;	
 	}
 
 	
 	public void unsetName () 
 	{
-		// TODO : to implement
-			
+		this.name = null;	
 	}
 
 

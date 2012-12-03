@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 import com.genmymodel.petshop.domain.OrderStatus;
 
 
@@ -41,199 +41,199 @@ public class Order
 	
 	public void addItems (Item newItems) 
 	{
-		// TODO : to implement
+		if(this.items==null) {
+			this.items= new java.util.HashSet<Item>();
+		}
+			
+		this.items.add (newItems);
 			
 	}
 
 	
 	public Cart getCart () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Customer getCustomer () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public String getDate () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Address getDeliveryAddress () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Long getId () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public List<Item> getItems () 
 	{
-		// TODO : to implement
-		return ;
-			
+		if(this.items==null) {
+			this.items= new java.util.HashSet<Item>();
+		}
+		return java.util.Collections.unmodifiableList
+					(new java.util.ArrayList<Item>(this.items));	
 	}
 
 	
 	public Address getPaymentAddress () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public String getReference () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public OrderStatus getStatus () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public void removeItems (Item oldItems) 
 	{
-		// TODO : to implement
+		if(this.items==null) {
+			return;
+		}
+		
+		this.items.remove (oldItems);
 			
 	}
 
 	
 	public void setCart (Cart myCart) 
 	{
-		// TODO : to implement
-			
+		if (this.cart != myCart) {
+			Cart oldcart = this.cart;
+			this.cart = myCart;
+			if (oldcart != null)
+				oldcart.unsetOrder ();
+			if (myCart != null)
+				myCart.setOrder (this);
+		}	
 	}
 
 	
 	public void setCustomer (Customer myCustomer) 
 	{
-		// TODO : to implement
-			
+		if (this.customer != myCustomer) {
+			Customer oldcustomer = this.customer;
+			this.customer = myCustomer;
+			if (oldcustomer != null)
+				oldcustomer.removeOrders (this);
+			if (myCustomer != null)
+				myCustomer.addOrders (this);
+		}	
 	}
 
 	
 	public void setDate (String myDate) 
 	{
-		// TODO : to implement
-			
+		this.date = myDate;	
 	}
 
 	
 	public void setDeliveryAddress (Address myDeliveryAddress) 
 	{
-		// TODO : to implement
-			
+		this.deliveryAddress = myDeliveryAddress;	
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		// TODO : to implement
-			
+		this.id = myId;	
 	}
 
 	
 	public void setPaymentAddress (Address myPaymentAddress) 
 	{
-		// TODO : to implement
-			
+		this.paymentAddress = myPaymentAddress;	
 	}
 
 	
 	public void setReference (String myReference) 
 	{
-		// TODO : to implement
-			
+		this.reference = myReference;	
 	}
 
 	
 	public void setStatus (OrderStatus myStatus) 
 	{
-		// TODO : to implement
-			
+		this.status = myStatus;	
 	}
 
 	
 	public void unsetCart () 
 	{
-		// TODO : to implement
-			
+		if (this.cart == null)
+			return;
+		Cart oldcart = this.cart;
+		this.cart = null;
+		oldcart.unsetOrder ();	
 	}
 
 	
 	public void unsetCustomer () 
 	{
-		// TODO : to implement
-			
+		if (this.customer == null)
+			return;
+		Customer oldcustomer = this.customer;
+		this.customer = null;
+		oldcustomer.removeOrders (this);	
 	}
 
 	
 	public void unsetDate () 
 	{
-		// TODO : to implement
-			
+		this.date = null;	
 	}
 
 	
 	public void unsetDeliveryAddress () 
 	{
-		// TODO : to implement
-			
+		this.deliveryAddress = null;	
 	}
 
 	
 	public void unsetId () 
 	{
-		// TODO : to implement
-			
+		this.id = null;	
 	}
 
 	
 	public void unsetPaymentAddress () 
 	{
-		// TODO : to implement
-			
+		this.paymentAddress = null;	
 	}
 
 	
 	public void unsetReference () 
 	{
-		// TODO : to implement
-			
+		this.reference = null;	
 	}
 
 	
 	public void unsetStatus () 
 	{
-		// TODO : to implement
-			
+		this.status = null;	
 	}
 
 

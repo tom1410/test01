@@ -23,89 +23,73 @@ public class Item
 	
 	public Long getId () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Double getPrice () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public Product getProduct () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public String getQuantity () 
 	{
-		// TODO : to implement
-		return ;
 			
 	}
 
 	
 	public void setId (Long myId) 
 	{
-		// TODO : to implement
-			
+		this.id = myId;	
 	}
 
 	
 	public void setPrice (Double myPrice) 
 	{
-		// TODO : to implement
-			
+		this.price = myPrice;	
 	}
 
 	
 	public void setProduct (Product myProduct) 
 	{
-		// TODO : to implement
-			
+		this.product = myProduct;	
 	}
 
 	
 	public void setQuantity (String myQuantity) 
 	{
-		// TODO : to implement
-			
+		this.quantity = myQuantity;	
 	}
 
 	
 	public void unsetId () 
 	{
-		// TODO : to implement
-			
+		this.id = null;	
 	}
 
 	
 	public void unsetPrice () 
 	{
-		// TODO : to implement
-			
+		this.price = null;	
 	}
 
 	
 	public void unsetProduct () 
 	{
-		// TODO : to implement
-			
+		this.product = null;	
 	}
 
 	
 	public void unsetQuantity () 
 	{
-		// TODO : to implement
-			
+		this.quantity = null;	
 	}
 
 
