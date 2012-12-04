@@ -10,9 +10,6 @@ public class Cart
 
 	
 	
-	private Boolean active;
-	
-	
 	private java.util.Date creationDate;
 	
 	
@@ -37,12 +34,6 @@ public class Cart
 			
 		this.items.add (newItems);
 			
-	}
-
-	
-	public Boolean getActive () 
-	{
-		return this.active;	
 	}
 
 	
@@ -88,12 +79,6 @@ public class Cart
 		
 		this.items.remove (oldItems);
 			
-	}
-
-	
-	public void setActive (Boolean myActive) 
-	{
-		this.active = myActive;	
 	}
 
 	
