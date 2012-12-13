@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_gis_com_restaurant_domain_Boisson" items="${boissons}" z="s9lVCrpaKrEIzHBhww3cshVwY8k=">
+        <table:table data="${boissons}" id="l_gis_com_restaurant_domain_Boisson" path="/boissons" z="EwXpk2UQg/ruFLQCerSW3HQizbA=">
+            <table:column id="c_gis_com_restaurant_domain_Boisson_designation" property="designation" z="dE4PY2TrJCkYGVKPA8AdlMhIvhU="/>
+            <table:column id="c_gis_com_restaurant_domain_Boisson_prix" property="prix" z="yI/4YIgqSbFbJvVFbDOnOqBP8Vw="/>
+        </table:table>
+    </page:list>
+</div>

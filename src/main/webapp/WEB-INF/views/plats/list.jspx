@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_gis_com_restaurant_domain_Plat" items="${plats}" z="jr7Ew9JuZDMESZgwCYsJdulhXDQ=">
+        <table:table data="${plats}" id="l_gis_com_restaurant_domain_Plat" path="/plats" z="8GmPQeqDTUSSIbtvDo6H/1wjn6g=">
+            <table:column id="c_gis_com_restaurant_domain_Plat_nbEtoiles" property="nbEtoiles" z="04R58SdfRtTBGhV0fKUylMh4jms="/>
+        </table:table>
+    </page:list>
+</div>

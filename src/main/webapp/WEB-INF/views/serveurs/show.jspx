@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_gis_com_restaurant_domain_Serveur" object="${serveur}" path="/serveurs" z="3CqxesD4TLqJ7BfcWeClFZRTxQk=">
+        <field:display field="nom" id="s_gis_com_restaurant_domain_Serveur_nom" object="${serveur}" z="efo+pm7ur26q1nPD6AI7n/QioS0="/>
+        <field:display field="prenom" id="s_gis_com_restaurant_domain_Serveur_prenom" object="${serveur}" z="mwYIa2/iMMnA3UuN2MKZu6CO/ok="/>
+        <field:display field="commandes" id="s_gis_com_restaurant_domain_Serveur_commandes" object="${serveur}" z="hOvXwDMCNP54wIaqNA+Nklx4rK0="/>
+        <field:display field="tables_" id="s_gis_com_restaurant_domain_Serveur_tables_" object="${serveur}" z="E66kCDAIQoQPS86KPJjdWEkVORs="/>
+    </page:show>
+</div>
