@@ -11,9 +11,6 @@ public class Client
 	private String address;
 	
 	
-	private Long id;
-	
-	
 	private String nom;
 	
 	
@@ -27,12 +24,6 @@ public class Client
 	public String getAddress () 
 	{
 		return this.address;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -60,12 +51,6 @@ public class Client
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setNom (String myNom) 
 	{
 		this.nom = myNom;	
@@ -87,12 +72,6 @@ public class Client
 	public void unsetAddress () 
 	{
 		this.address = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

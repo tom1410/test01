@@ -8,20 +8,11 @@ public class TableService
 
 	
 	
-	private Long id;
-	
-	
 	private Integer numero;
 	
 	
 	private Integer places;
     
-
-	
-	public Long getId () 
-	{
-		return this.id;	
-	}
 
 	
 	public Integer getNumero () 
@@ -36,12 +27,6 @@ public class TableService
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setNumero (Integer myNumero) 
 	{
 		this.numero = myNumero;	
@@ -51,12 +36,6 @@ public class TableService
 	public void setPlaces (Integer myPlaces) 
 	{
 		this.places = myPlaces;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

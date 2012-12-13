@@ -13,9 +13,6 @@ public class Carte
 	private Set<Boisson> boissons;
 	
 	
-	private Long id;
-	
-	
 	private Set<Plat> plats;
 	
 	
@@ -52,12 +49,6 @@ public class Carte
 		}
 		return java.util.Collections.unmodifiableList
 					(new java.util.ArrayList<Boisson>(this.boissons));	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -99,21 +90,9 @@ public class Carte
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setVersion (Integer myVersion) 
 	{
 		this.version = myVersion;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

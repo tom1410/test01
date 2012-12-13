@@ -14,9 +14,6 @@ public class Reservation
 	private java.util.Date dateResa;
 	
 	
-	private Long id;
-	
-	
 	private TableService table;
     
 
@@ -30,12 +27,6 @@ public class Reservation
 	public java.util.Date getDateResa () 
 	{
 		return this.dateResa;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -57,12 +48,6 @@ public class Reservation
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setTable (TableService myTable) 
 	{
 		this.table = myTable;	
@@ -78,12 +63,6 @@ public class Reservation
 	public void unsetDateResa () 
 	{
 		this.dateResa = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

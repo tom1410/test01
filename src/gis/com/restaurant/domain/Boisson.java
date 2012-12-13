@@ -11,9 +11,6 @@ public class Boisson
 	private String designation;
 	
 	
-	private Long id;
-	
-	
 	private Double prix;
     
 
@@ -21,12 +18,6 @@ public class Boisson
 	public String getDesignation () 
 	{
 		return this.designation;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -42,12 +33,6 @@ public class Boisson
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setPrix (Double myPrix) 
 	{
 		this.prix = myPrix;	
@@ -57,12 +42,6 @@ public class Boisson
 	public void unsetDesignation () 
 	{
 		this.designation = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

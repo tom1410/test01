@@ -1,7 +1,7 @@
 package gis.com.restaurant.domain;
 
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 
 
 
@@ -11,9 +11,6 @@ public class Serveur
 	
 	
 	private Set<Commande> commandes;
-	
-	
-	private Long id;
 	
 	
 	private String nom;
@@ -55,12 +52,6 @@ public class Serveur
 		}
 		return java.util.Collections.unmodifiableList
 					(new java.util.ArrayList<Commande>(this.commandes));	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -108,12 +99,6 @@ public class Serveur
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setNom (String myNom) 
 	{
 		this.nom = myNom;	
@@ -123,12 +108,6 @@ public class Serveur
 	public void setPrenom (String myPrenom) 
 	{
 		this.prenom = myPrenom;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

@@ -16,9 +16,6 @@ public class Commande
 	private java.util.Date dateCommande;
 	
 	
-	private Long id;
-	
-	
 	private Set<Plat> plats;
     
 
@@ -61,12 +58,6 @@ public class Commande
 	}
 
 	
-	public Long getId () 
-	{
-		return this.id;	
-	}
-
-	
 	public List<Plat> getPlats () 
 	{
 		if(this.plats==null) {
@@ -105,21 +96,9 @@ public class Commande
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void unsetDateCommande () 
 	{
 		this.dateCommande = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 
