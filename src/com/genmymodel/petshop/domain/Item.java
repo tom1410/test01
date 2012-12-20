@@ -11,6 +11,9 @@ public class Item
 	private Double price;
 	
 	
+	private Product product;
+	
+	
 	private String quantity;
     
 
@@ -18,6 +21,12 @@ public class Item
 	public Double getPrice () 
 	{
 		return this.price;	
+	}
+
+	
+	public Product getProduct () 
+	{
+		return this.product;	
 	}
 
 	
@@ -33,6 +42,12 @@ public class Item
 	}
 
 	
+	public void setProduct (Product myProduct) 
+	{
+		this.product = myProduct;	
+	}
+
+	
 	public void setQuantity (String myQuantity) 
 	{
 		this.quantity = myQuantity;	
@@ -42,6 +57,12 @@ public class Item
 	public void unsetPrice () 
 	{
 		this.price = null;	
+	}
+
+	
+	public void unsetProduct () 
+	{
+		this.product = null;	
 	}
 
 	

@@ -1,11 +1,16 @@
 package com.genmymodel.petshop.domain;
 
+import java.util.Set;
+import java.util.List;
 
 
 
 public class Customer
 {
 
+	
+	
+	private Address address;
 	
 	
 	private Cart carts;
@@ -15,7 +20,31 @@ public class Customer
 	
 	
 	private String lastName;
+	
+	
+	private Set<Order> orders;
+	
+	
+	private String surname;
     
+
+	
+	public void addOrders (Order newOrders) 
+	{
+		if(this.orders==null) {
+			this.orders= new java.util.HashSet<Order>();
+		}
+			
+		if (this.orders.add (newOrders))
+			newOrders.setCustomer (this);
+			
+	}
+
+	
+	public Address getAddress () 
+	{
+		return this.address;	
+	}
 
 	
 	public Cart getCarts () 
@@ -33,6 +62,39 @@ public class Customer
 	public String getLastName () 
 	{
 		return this.lastName;	
+	}
+
+	
+	public List<Order> getOrders () 
+	{
+		if(this.orders==null) {
+			this.orders= new java.util.HashSet<Order>();
+		}
+		return java.util.Collections.unmodifiableList
+					(new java.util.ArrayList<Order>(this.orders));	
+	}
+
+	
+	public String getSurname () 
+	{
+		return this.surname;	
+	}
+
+	
+	public void removeOrders (Order oldOrders) 
+	{
+		if(this.orders==null) {
+			return;
+		}
+		
+		this.orders.remove (oldOrders);
+			
+	}
+
+	
+	public void setAddress (Address myAddress) 
+	{
+		this.address = myAddress;	
 	}
 
 	
@@ -61,6 +123,18 @@ public class Customer
 	}
 
 	
+	public void setSurname (String mySurname) 
+	{
+		this.surname = mySurname;	
+	}
+
+	
+	public void unsetAddress () 
+	{
+		this.address = null;	
+	}
+
+	
 	public void unsetCarts () 
 	{
 		if (this.carts == null)
@@ -80,6 +154,12 @@ public class Customer
 	public void unsetLastName () 
 	{
 		this.lastName = null;	
+	}
+
+	
+	public void unsetSurname () 
+	{
+		this.surname = null;	
 	}
 
 
