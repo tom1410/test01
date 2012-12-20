@@ -1,7 +1,5 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.List;
-import java.util.Set;
 
 
 
@@ -10,30 +8,19 @@ public class Cart
 
 	
 	
+	private Boolean active;
+	
+	
 	private java.util.Date creationDate;
 	
 	
 	private Customer customer;
-	
-	
-	private Long id;
-	
-	
-	private Set<Item> items;
-	
-	
-	private Order order;
     
 
 	
-	public void addItems (Item newItems) 
+	public Boolean getActive () 
 	{
-		if(this.items==null) {
-			this.items= new java.util.HashSet<Item>();
-		}
-			
-		this.items.add (newItems);
-			
+		return this.active;	
 	}
 
 	
@@ -49,36 +36,9 @@ public class Cart
 	}
 
 	
-	public Long getId () 
+	public void setActive (Boolean myActive) 
 	{
-		return this.id;	
-	}
-
-	
-	public List<Item> getItems () 
-	{
-		if(this.items==null) {
-			this.items= new java.util.HashSet<Item>();
-		}
-		return java.util.Collections.unmodifiableList
-					(new java.util.ArrayList<Item>(this.items));	
-	}
-
-	
-	public Order getOrder () 
-	{
-		return this.order;	
-	}
-
-	
-	public void removeItems (Item oldItems) 
-	{
-		if(this.items==null) {
-			return;
-		}
-		
-		this.items.remove (oldItems);
-			
+		this.active = myActive;	
 	}
 
 	
@@ -101,25 +61,6 @@ public class Cart
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
-	public void setOrder (Order myOrder) 
-	{
-		if (this.order != myOrder) {
-			Order oldorder = this.order;
-			this.order = myOrder;
-			if (oldorder != null)
-				oldorder.unsetCart ();
-			if (myOrder != null)
-				myOrder.setCart (this);
-		}	
-	}
-
-	
 	public void unsetCreationDate () 
 	{
 		this.creationDate = null;	
@@ -133,22 +74,6 @@ public class Cart
 		Customer oldcustomer = this.customer;
 		this.customer = null;
 		oldcustomer.unsetCarts ();	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
-	}
-
-	
-	public void unsetOrder () 
-	{
-		if (this.order == null)
-			return;
-		Order oldorder = this.order;
-		this.order = null;
-		oldorder.unsetCart ();	
 	}
 
 
