@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 
 
 
@@ -25,7 +25,7 @@ public class Customer
 	private Set<Order> orders;
 	
 	
-	private String surname;
+	private String surname2;
     
 
 	
@@ -75,9 +75,9 @@ public class Customer
 	}
 
 	
-	public String getSurname () 
+	public String getSurname2 () 
 	{
-		return this.surname;	
+		return this.surname2;	
 	}
 
 	
@@ -123,9 +123,9 @@ public class Customer
 	}
 
 	
-	public void setSurname (String mySurname) 
+	public void setSurname2 (String mySurname2) 
 	{
-		this.surname = mySurname;	
+		this.surname2 = mySurname2;	
 	}
 
 	
@@ -157,9 +157,9 @@ public class Customer
 	}
 
 	
-	public void unsetSurname () 
+	public void unsetSurname2 () 
 	{
-		this.surname = null;	
+		this.surname2 = null;	
 	}
 
 
