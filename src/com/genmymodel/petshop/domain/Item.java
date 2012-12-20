@@ -2,7 +2,9 @@ package com.genmymodel.petshop.domain;
 
 
 
-
+/**
+ * Test doc on item 
+ */
 public class Item
 {
 

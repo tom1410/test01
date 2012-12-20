@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Set;
 
 
-
+/**
+ * here is a custome 
+ */
 public class Customer
 {
 
@@ -24,7 +26,9 @@ public class Customer
 	
 	private Set<Order> orders;
 	
-	
+	/**
+	 * surname doc strin 
+	 */
 	private String surname2;
     
 
