@@ -1,0 +1,6 @@
+project --topLevelPackage amiral-nelson --projectName amiral-nelson
+
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+
+logging setup --level INFO
+

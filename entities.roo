@@ -1,0 +1,12 @@
+
+# Entities and attributes
+
+entity jpa --class ~.domain.MyClass --sequenceName MYCLASS_SEQ
+field other --fieldName attribute --notNull
+entity jpa --class ~.domain.MyClass2 --sequenceName MYCLASS2_SEQ
+field other --fieldName attribute --notNull
+
+
+# References (relations between entities)
+
+
