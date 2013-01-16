@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_gis_com_restaurant_domain_TableService" object="${tableservice}" path="/tableservices" z="iPEgHjazYgDXjjv42GQXGBrbdlo=">
-        <field:display field="numero" id="s_gis_com_restaurant_domain_TableService_numero" object="${tableservice}" z="vSyDR/mpysx/bcSdbEts/Rl+QnE="/>
-        <field:display field="places" id="s_gis_com_restaurant_domain_TableService_places" object="${tableservice}" z="TYGWe8n3sL5+zDp2GIbnnetS7FU="/>
-    </page:show>
-</div>

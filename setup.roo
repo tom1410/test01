@@ -1,6 +1,0 @@
-project --topLevelPackage gis.com.restaurant --projectName com.restaurant
-
-jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
-
-logging setup --level INFO
-

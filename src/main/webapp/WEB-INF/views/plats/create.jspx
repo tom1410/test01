@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:create id="fc_gis_com_restaurant_domain_Plat" modelAttribute="plat" path="/plats" render="${empty dependencies}" z="0khmG1bYTg3izD1MsGK/ax/mu+s=">
-        <field:input field="nbEtoiles" id="c_gis_com_restaurant_domain_Plat_nbEtoiles" z="9dvPkdmWXwXYAMwDDMy3XNj+gU0="/>
-    </form:create>
-    <form:dependency dependencies="${dependencies}" id="d_gis_com_restaurant_domain_Plat" render="${not empty dependencies}" z="KcMHua3zfmSpw4vGkFCNfe1GCpE="/>
-</div>
