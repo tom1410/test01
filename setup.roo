@@ -1,4 +1,4 @@
-project --topLevelPackage amiral-nelson --projectName amiral-nelson
+project --topLevelPackage iuyiyuiyuiyui --projectName iuyiyuiyuiyui
 
 jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
 
