@@ -1,4 +1,4 @@
-project --topLevelPackage iuyiyuiyuiyui --projectName iuyiyuiyuiyui
+project --topLevelPackage onlineShoppingCart --projectName onlineShoppingCart
 
 jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
 

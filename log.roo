@@ -30,3 +30,23 @@ web mvc language --code en
 // script --file webmvc.roo
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-21 14:21:23
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 15:55:24
+// [failed] script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 15:55:28
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 15:55:30
+enum type --class ~.reference.UserState
+enum constant --name MyNew
+enum constant --name Active
+enum constant --name Banned
+entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
+field other --fieldName price --type Real  --notNull
+field other --fieldName quantity --type ShoppingCart  --notNull
+entity jpa --class ~.domain.ShoppingCart --sequenceName SHOPPINGCART_SEQ
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 15:55:33
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 15:55:36
+// [failed] script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 15:55:38
