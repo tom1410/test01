@@ -1,9 +1,0 @@
-
-# Entities and attributes
-
-entity jpa --class ~.domain.MyClass --sequenceName MYCLASS_SEQ
-
-
-# References (relations between entities)
-
-
