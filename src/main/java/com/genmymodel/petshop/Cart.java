@@ -33,7 +33,7 @@ public class Cart
 	 * @ordered
 	 */
 	
-	protected Order order;
+	protected Item items;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -49,7 +49,7 @@ public class Cart
 	 * @ordered
 	 */
 	
-	protected Item items;
+	protected Order order;
 
 	/**
 	 * <!-- begin-user-doc -->

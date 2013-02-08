@@ -40,7 +40,7 @@ public class Order
 	 * @ordered
 	 */
 	
-	protected Item items;
+	protected Customer customer;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -56,14 +56,6 @@ public class Order
 	 * @ordered
 	 */
 	
-	protected Cart cart;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
 	protected Address paymentAddress;
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,7 +64,15 @@ public class Order
 	 * @ordered
 	 */
 	
-	protected Customer customer;
+	protected Cart cart;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected Item items;
 
 	/**
 	 * <!-- begin-user-doc -->
