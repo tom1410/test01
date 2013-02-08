@@ -16,15 +16,15 @@ public class Address
 	 * @ordered
 	 */
 	
-	protected String line1;
+	String line1;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
 	
-	protected String line2;
+	public String line2;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
