@@ -16,7 +16,7 @@ public class Address
 	 * @ordered
 	 */
 	
-	String line1;
+	protected String line1;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

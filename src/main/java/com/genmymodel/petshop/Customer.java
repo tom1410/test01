@@ -40,7 +40,7 @@ public class Customer
 	 * @ordered
 	 */
 	
-	protected Cart carts;
+	protected Address address;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -48,7 +48,7 @@ public class Customer
 	 * @ordered
 	 */
 	
-	protected Address address;
+	protected Cart carts;
 
 	/**
 	 * <!-- begin-user-doc -->

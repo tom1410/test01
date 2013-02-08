@@ -33,6 +33,14 @@ public class Cart
 	 * @ordered
 	 */
 	
+	protected Order order;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected Item items;
 	/**
 	 * <!-- begin-user-doc -->
@@ -42,14 +50,6 @@ public class Cart
 	 */
 	
 	protected Customer customer;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected Order order;
 
 	/**
 	 * <!-- begin-user-doc -->
