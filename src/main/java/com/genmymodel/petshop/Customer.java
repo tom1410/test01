@@ -32,6 +32,14 @@ public class Customer
 	 * @ordered
 	 */
 	
+	protected Cart carts;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected Order orders;
 	/**
 	 * <!-- begin-user-doc -->
@@ -41,14 +49,6 @@ public class Customer
 	 */
 	
 	protected Address address;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected Cart carts;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -46,6 +46,15 @@ public class Address
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
+	 * @ordered
+	 */
+	
+	protected String street;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
 	 */
 	public Address(){
 		
@@ -97,6 +106,16 @@ public class Address
 	 * @generated
 	 * @ordered
 	 */
+	public String getStreet() {
+		return this.street;	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
 	public void setLine1(String myLine1) {
 		this.line1 = myLine1;	
 	}
@@ -137,6 +156,16 @@ public class Address
 	 * @generated
 	 * @ordered
 	 */
+	public void setStreet(String myStreet) {
+		this.street = myStreet;	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
 	public void unsetLine1() {
 		this.line1 = "";	
 	}
@@ -169,6 +198,16 @@ public class Address
 	 */
 	public void unsetCountry() {
 		this.country = "";	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	public void unsetStreet() {
+		this.street = "";	
 	}
 	
 }
