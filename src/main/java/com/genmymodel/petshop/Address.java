@@ -66,6 +66,17 @@ public class Address
 	 * @generated
 	 * @ordered
 	 */
+	
+	public void operation() {
+		// TODO : to implement	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
 	public String getLine1() {
 		return this.line1;	
 	}
