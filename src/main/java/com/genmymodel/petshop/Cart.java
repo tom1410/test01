@@ -3,6 +3,7 @@ import java.util.Date;
 
 
 /**
+ * 
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -11,6 +12,7 @@ import java.util.Date;
 public class Cart
 {
 	/**
+	 * 
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -33,14 +35,6 @@ public class Cart
 	 * @ordered
 	 */
 	
-	protected Customer customer;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
 	protected Item items;
 	/**
 	 * <!-- begin-user-doc -->
@@ -50,6 +44,14 @@ public class Cart
 	 */
 	
 	protected Order order;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected Customer customer;
 
 	/**
 	 * <!-- begin-user-doc -->

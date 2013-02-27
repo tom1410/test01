@@ -48,7 +48,7 @@ public class Order
 	 * @ordered
 	 */
 	
-	protected Address deliveryAddress;
+	protected Item items;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -72,7 +72,7 @@ public class Order
 	 * @ordered
 	 */
 	
-	protected Item items;
+	protected Address deliveryAddress;
 
 	/**
 	 * <!-- begin-user-doc -->
