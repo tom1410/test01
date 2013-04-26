@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_MyOrder" items="${myorders}" z="PRxhI4e0q99NV/wiJD9VyeI0xM0=">
+        <table:table data="${myorders}" id="l_toto_domain_MyOrder" path="/myorders" z="40mQdkx1IR7IUvDyKgno/m7Y+Uw=">
+            <table:column id="c_toto_domain_MyOrder_status" property="status" z="1moJh+yTxxpwbp6cmgtEvNcudsk="/>
+            <table:column id="c_toto_domain_MyOrder_Mynumber" property="mynumber" z="n1g8x2T1/yMxvHvTsHtKVwxmoNo="/>
+            <table:column date="true" dateTimePattern="${myOrder_ordered_date_format}" id="c_toto_domain_MyOrder_ordered" property="ordered" z="PUm5vzAp2BrYNBHrTxg5VAFwf0A="/>
+            <table:column id="c_toto_domain_MyOrder_shipped" property="shipped" z="CeBbYs+jG+/tY4jnItUV0Hz3J0M="/>
+            <table:column id="c_toto_domain_MyOrder_total" property="total" z="bTU8N5XLx0dJYWeaDFaDSKaBkGY="/>
+            <table:column id="c_toto_domain_MyOrder_shipTo" property="shipTo" z="MT/0hLCbZv7JZ01GCjp0nqZHUN4="/>
+        </table:table>
+    </page:list>
+</div>

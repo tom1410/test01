@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_toto_domain_ShoppinCart" modelAttribute="shoppinCart" path="/shoppincarts" versionField="Version" z="lAtphXIqtAYBlL5Ju5XDfkUr7pI=">
+        <field:datetime dateTimePattern="${shoppinCart_creationdate_date_format}" field="creationDate" id="c_toto_domain_ShoppinCart_creationDate" z="/39Y25tQZsbAKAK7tiS+dlFr5T0="/>
+        <field:simple field="items" id="c_toto_domain_ShoppinCart_items" messageCode="entity_reference_not_managed" messageCodeAttribute="Line Item" z="66NvfQpVuRPybCADvkWNpYM+wkY="/>
+        <field:select field="webuser" id="c_toto_domain_ShoppinCart_webuser" itemValue="id" items="${webusers}" path="/webusers" z="WTng1RCvzMFe+Ey8yBiOQR7qnN8="/>
+        <field:select field="account" id="c_toto_domain_ShoppinCart_account" itemValue="id" items="${accounts}" path="/accounts" z="N7km6dQPUIOVFuqPiZL3F2niZT8="/>
+    </form:update>
+</div>

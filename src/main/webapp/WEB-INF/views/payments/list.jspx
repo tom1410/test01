@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_Payment" items="${payments}" z="6Dh8AKj6uJOirbgmAfkpU1cxH+Q=">
+        <table:table data="${payments}" id="l_toto_domain_Payment" path="/payments" z="1JuT/FDOpsXBNDjH/YozFy5q5No=">
+            <table:column id="c_toto_domain_Payment_details" property="details" z="R9o6LENNI0LRMkD9swr8UZzMgGE="/>
+            <table:column date="true" dateTimePattern="${payment_paiddate_date_format}" id="c_toto_domain_Payment_paidDate" property="paidDate" z="Y1zgtj+ksY3f+ibnTiYz7XZgvOc="/>
+            <table:column id="c_toto_domain_Payment_total" property="total" z="RFBDJanveOPXtQM+3HKz/vzj9FQ="/>
+            <table:column id="c_toto_domain_Payment_Myorder" property="myorder" z="KObTmH9I0T0ZzE3mnVzUR/8NAjM="/>
+            <table:column id="c_toto_domain_Payment_account" property="account" z="RsO73MzrWd5Q1d0NYauThzReKEA="/>
+        </table:table>
+    </page:list>
+</div>

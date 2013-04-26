@@ -1,0 +1,86 @@
+
+# Entities and attributes
+enum type --class ~.domain.UserState
+	enum constant --name MyNew
+	enum constant --name Active
+	enum constant --name Banned
+	
+enum type --class ~.domain.OrderStatus
+	enum constant --name MyNew
+	enum constant --name MyOld
+	enum constant --name Shipped
+	enum constant --name Delivered
+	enum constant --name Closed
+	
+
+entity jpa --class ~.domain.Customer  --sequenceName CUSTOMER_SEQ
+	field string --fieldName email
+	field string --fieldName address
+	field string --fieldName phone
+	
+entity jpa --class ~.domain.Payment  --sequenceName PAYMENT_SEQ
+	field string --fieldName details
+	field date --fieldName paidDate --type java.util.Date
+	field number --fieldName total --type java.lang.Double --primitive
+	
+entity jpa --class ~.domain.ShoppinCart  --sequenceName SHOPPINCART_SEQ
+	field date --fieldName creationDate --type java.util.Date
+	
+entity jpa --class ~.domain.Account  --sequenceName ACCOUNT_SEQ
+	field boolean --fieldName isClosed --primitive
+	field string --fieldName billingAddress
+	field date --fieldName Myopen --type java.util.Date
+	field date --fieldName closed --type java.util.Date
+	
+entity jpa --class ~.domain.WebUser  --sequenceName WEBUSER_SEQ
+	field enum --fieldName Mystate --type ~.domain.UserState
+	field string --fieldName Mypassword
+	field string --fieldName login
+	
+entity jpa --class ~.domain.MyOrder  --sequenceName MYORDER_SEQ
+	field enum --fieldName status --type ~.domain.OrderStatus
+	field number --fieldName Mynumber --type java.lang.Integer --primitive
+	field date --fieldName ordered --type java.util.Date
+	field boolean --fieldName shipped --primitive
+	field number --fieldName total --type java.lang.Double --primitive
+	field string --fieldName shipTo
+	
+entity jpa --class ~.domain.LineItem  --sequenceName LINEITEM_SEQ
+	field number --fieldName price --type java.lang.Double --primitive
+	field number --fieldName quantity --type java.lang.Integer --primitive
+	
+entity jpa --class ~.domain.Product  --sequenceName PRODUCT_SEQ
+	field string --fieldName description
+	field string --fieldName Myname
+	
+
+
+# Start of user code for entities and atributes
+
+# End of user code
+
+# References (relations between entities)
+field reference --fieldName acc --type Account --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field reference --fieldName webuser --type WebUser --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field reference --fieldName Myorder --type MyOrder --class  ~.domain.Payment --cardinality MANY_TO_ONE
+field reference --fieldName account --type Account --class  ~.domain.Payment --cardinality MANY_TO_ONE
+field set --fieldName items --type LineItem --class  ~.domain.ShoppinCart --cardinality ONE_TO_MANY
+field reference --fieldName webuser --type WebUser --class  ~.domain.ShoppinCart --cardinality ONE_TO_ONE
+field reference --fieldName account --type Account --class  ~.domain.ShoppinCart --cardinality ONE_TO_ONE
+field reference --fieldName cart --type ShoppinCart --class  ~.domain.Account --cardinality ONE_TO_ONE
+field set --fieldName Myorder --type MyOrder --class  ~.domain.Account --cardinality ONE_TO_MANY
+field set --fieldName payment --type Payment --class  ~.domain.Account --cardinality ONE_TO_MANY
+field reference --fieldName customer --type Customer --class  ~.domain.Account --cardinality ONE_TO_ONE
+field reference --fieldName customer --type Customer --class  ~.domain.WebUser --cardinality ONE_TO_ONE
+field reference --fieldName shoppincart --type ShoppinCart --class  ~.domain.WebUser --cardinality ONE_TO_ONE
+field reference --fieldName account --type Account --class  ~.domain.MyOrder --cardinality MANY_TO_ONE
+field set --fieldName items --type LineItem --class  ~.domain.MyOrder --cardinality MANY_TO_MANY
+field reference --fieldName sc --type ShoppinCart --class  ~.domain.LineItem --cardinality MANY_TO_ONE
+field reference --fieldName product --type Product --class  ~.domain.LineItem --cardinality MANY_TO_ONE
+field set --fieldName item --type LineItem --class  ~.domain.Product --cardinality ONE_TO_MANY
+
+
+# Start of user code for references
+
+# End of user code for references
+

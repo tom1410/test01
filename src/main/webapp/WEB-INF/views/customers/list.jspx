@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_Customer" items="${customers}" z="67+CW7vY08LO53qy2iH6TRY1gZ4=">
+        <table:table data="${customers}" id="l_toto_domain_Customer" path="/customers" z="1Z0GA9ilZ6LrRvXGYBMMn12GLE0=">
+            <table:column id="c_toto_domain_Customer_email" property="email" z="iHyTh+Cl6zdrWWyNSXQj0Bu6+rA="/>
+            <table:column id="c_toto_domain_Customer_address" property="address" z="bF4L047v9TTZ4hyU4Ocf6b4h+QQ="/>
+            <table:column id="c_toto_domain_Customer_phone" property="phone" z="7EUwXmE8ho147LOpsZNTBZ/gOw0="/>
+            <table:column id="c_toto_domain_Customer_acc" property="acc" z="ABJCh58CvLv4ViMZFl7GCIG7uGM="/>
+            <table:column id="c_toto_domain_Customer_webuser" property="webuser" z="yl0UvrDa0hTztfH/jP1s4VyUw/M="/>
+        </table:table>
+    </page:list>
+</div>

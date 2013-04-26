@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_toto_domain_Customer" modelAttribute="customer" path="/customers" versionField="Version" z="FucdvYqcgAIFetqcbQYAq9awX4U=">
+        <field:input field="email" id="c_toto_domain_Customer_email" validationMessageCode="field_invalid_email" z="hUJZYmhPYMd8RuQ+UbvHV0hM3YA="/>
+        <field:input field="address" id="c_toto_domain_Customer_address" z="TTNz3VJ8uMQRoKIRQcW4065PXJM="/>
+        <field:input field="phone" id="c_toto_domain_Customer_phone" z="UQgJh77jQqjItUXQbcUpj2g5Aqs="/>
+        <field:select field="acc" id="c_toto_domain_Customer_acc" itemValue="id" items="${accounts}" path="/accounts" z="dBCrrtUx5nv+kK+SKVT8fe+l00Y="/>
+        <field:select field="webuser" id="c_toto_domain_Customer_webuser" itemValue="id" items="${webusers}" path="/webusers" z="OA0gLWgGiYrTbD5XUm5n6AQEAQY="/>
+    </form:update>
+</div>

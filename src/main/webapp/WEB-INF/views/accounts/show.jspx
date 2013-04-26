@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_toto_domain_Account" object="${account}" path="/accounts" z="tY3DFN4RGSjIBspMdeMtHUd2hOs=">
+        <field:display field="isClosed" id="s_toto_domain_Account_isClosed" object="${account}" z="N4vXMwcTDiZk5r+ZuWPG4WwptoA="/>
+        <field:display field="billingAddress" id="s_toto_domain_Account_billingAddress" object="${account}" z="crBxC/ARtpklKVt+S/cZNiWeKv4="/>
+        <field:display date="true" dateTimePattern="${account_myopen_date_format}" field="myopen" id="s_toto_domain_Account_Myopen" object="${account}" z="l+5f7kxwMy4rqyHruVKy2g6aKI0="/>
+        <field:display date="true" dateTimePattern="${account_closed_date_format}" field="closed" id="s_toto_domain_Account_closed" object="${account}" z="HuTrbUaaKP5wfXxEBZhvR1KEVoI="/>
+        <field:display field="cart" id="s_toto_domain_Account_cart" object="${account}" z="FpNo+Mn7xslN7i1nZZuZ27u8NOU="/>
+        <field:display field="customer" id="s_toto_domain_Account_customer" object="${account}" z="tqfqiu2UHugyxQtPcTTmlHszIZQ="/>
+    </page:show>
+</div>

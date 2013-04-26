@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_toto_domain_MyOrder" object="${myorder}" path="/myorders" z="N/1Sw5HHE88fZVS+TDcXLGN6Uw8=">
+        <field:display field="status" id="s_toto_domain_MyOrder_status" object="${myorder}" z="FUwvQjWBp9JCsf5QIDCATKZAl0w="/>
+        <field:display field="mynumber" id="s_toto_domain_MyOrder_Mynumber" object="${myorder}" z="IOhhGNF1vn0t39Vf+YFmtcSEhvs="/>
+        <field:display date="true" dateTimePattern="${myOrder_ordered_date_format}" field="ordered" id="s_toto_domain_MyOrder_ordered" object="${myorder}" z="kZKewH2UG8Ey/zYKmJve1mSgAHg="/>
+        <field:display field="shipped" id="s_toto_domain_MyOrder_shipped" object="${myorder}" z="b9nmFNoJKqHnaRaXUQoirG8A5g0="/>
+        <field:display field="total" id="s_toto_domain_MyOrder_total" object="${myorder}" z="mPG0GV2B9gqUuTPVoRAu/WC/YTE="/>
+        <field:display field="shipTo" id="s_toto_domain_MyOrder_shipTo" object="${myorder}" z="auef1CXCqYKMglYlp4QDikEtq2w="/>
+        <field:display field="account" id="s_toto_domain_MyOrder_account" object="${myorder}" z="H5z5i94NANE1UulRT2oLbhuIJRk="/>
+        <field:display field="items" id="s_toto_domain_MyOrder_items" object="${myorder}" z="v7CZYhWOjplO1pAbd23ysdImA5k="/>
+    </page:show>
+</div>

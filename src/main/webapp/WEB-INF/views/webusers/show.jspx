@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_toto_domain_WebUser" object="${webuser}" path="/webusers" z="W2cWzEuYKgdRidjfQkY5W0Sj21k=">
+        <field:display field="mystate" id="s_toto_domain_WebUser_Mystate" object="${webuser}" z="wvP4f4wfJrNxM5ekeympPI0ZrA0="/>
+        <field:display field="mypassword" id="s_toto_domain_WebUser_Mypassword" object="${webuser}" z="rQKQSqwqMxPABbi8XxkDt98GTHU="/>
+        <field:display field="login" id="s_toto_domain_WebUser_login" object="${webuser}" z="8GsWMEyejEI2a/TAmoG9Gx9xi0k="/>
+        <field:display field="customer" id="s_toto_domain_WebUser_customer" object="${webuser}" z="ME5IaRHeudWwQLlRhhbaPzMre60="/>
+        <field:display field="shoppincart" id="s_toto_domain_WebUser_shoppincart" object="${webuser}" z="24ytV9rWx5RTJvdf9CHAji13pbU="/>
+    </page:show>
+</div>

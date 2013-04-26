@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_WebUser" items="${webusers}" z="f6hn8mwJMsoehsTOC/Vm68kkDm0=">
+        <table:table data="${webusers}" id="l_toto_domain_WebUser" path="/webusers" z="Tt82J1t+4MyCe8I6GgcgNAknf3M=">
+            <table:column id="c_toto_domain_WebUser_Mystate" property="mystate" z="ZOYLHnnbTF3W0oItNZP5fpv+RGo="/>
+            <table:column id="c_toto_domain_WebUser_Mypassword" property="mypassword" z="yiLL3oMe8TYEIGMa9QlB38dEd60="/>
+            <table:column id="c_toto_domain_WebUser_login" property="login" z="p0VnNO7zi3RtbAGljIRwU+3VGwQ="/>
+            <table:column id="c_toto_domain_WebUser_customer" property="customer" z="lah+U4y93NgLpY19+xBZL+s1wnk="/>
+            <table:column id="c_toto_domain_WebUser_shoppincart" property="shoppincart" z="S7Oil49FjYcbBvlx5u1PhqFkTTo="/>
+        </table:table>
+    </page:list>
+</div>

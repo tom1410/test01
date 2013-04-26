@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_toto_domain_Account" modelAttribute="account" path="/accounts" render="${empty dependencies}" z="axbi0sf6IlA99y/MQRWubAJVxcc=">
+        <field:checkbox field="isClosed" id="c_toto_domain_Account_isClosed" z="cU4CKE6RjU36mY2Td1qy5aLq490="/>
+        <field:input field="billingAddress" id="c_toto_domain_Account_billingAddress" z="5/CVsUlesJD5inqig/f1l8qknAw="/>
+        <field:datetime dateTimePattern="${account_myopen_date_format}" field="Myopen" id="c_toto_domain_Account_Myopen" z="GfSNIey7VmVNGfan632BfhIBm0E="/>
+        <field:datetime dateTimePattern="${account_closed_date_format}" field="closed" id="c_toto_domain_Account_closed" z="Izhn0Eb7dv5TeMiqFxWn97O5T/o="/>
+        <field:select field="cart" id="c_toto_domain_Account_cart" itemValue="id" items="${shoppincarts}" path="/shoppincarts" z="dDuncRdyby1du7EfCkZ+YWz9im0="/>
+        <field:simple field="Myorder" id="c_toto_domain_Account_Myorder" messageCode="entity_reference_not_managed" messageCodeAttribute="My Order" z="ssgjF3W12UlnT7RUyT6CuGQ3vCw="/>
+        <field:simple field="payment" id="c_toto_domain_Account_payment" messageCode="entity_reference_not_managed" messageCodeAttribute="Payment" z="xQ6ZPp6vJQyUyckDtmvs2p+FBdk="/>
+        <field:select field="customer" id="c_toto_domain_Account_customer" itemValue="id" items="${customers}" path="/customers" z="vf9r5A198w+8cCGanvNeOJldVpw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_toto_domain_Account" render="${not empty dependencies}" z="OMI0OyMAvnAhuKe1GjPSeQODsNM="/>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_Account" items="${accounts}" z="S4nIYtiXZxyveeaAMiPpXkOCbbk=">
+        <table:table data="${accounts}" id="l_toto_domain_Account" path="/accounts" z="+99SJ6z7dztbkK69xlQBAIL2akU=">
+            <table:column id="c_toto_domain_Account_isClosed" property="isClosed" z="3S0ShKb4xPpD6CZd1sozcgZtb9Q="/>
+            <table:column id="c_toto_domain_Account_billingAddress" property="billingAddress" z="5618aATgPsjS2493WHCWKPVt2ow="/>
+            <table:column date="true" dateTimePattern="${account_myopen_date_format}" id="c_toto_domain_Account_Myopen" property="myopen" z="4M6NwLFj87l7ZodOtog/LJ6wMeA="/>
+            <table:column date="true" dateTimePattern="${account_closed_date_format}" id="c_toto_domain_Account_closed" property="closed" z="QzQtpiQS1XqOUgaLHFLSBlRfYcg="/>
+            <table:column id="c_toto_domain_Account_cart" property="cart" z="MeSZhuhrox6NubhWyIPlvasrAsI="/>
+        </table:table>
+    </page:list>
+</div>

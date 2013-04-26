@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_toto_domain_LineItem" items="${lineitems}" z="yPYGtsX+BNQzG+eXUcO1aKW2jlY=">
+        <table:table data="${lineitems}" id="l_toto_domain_LineItem" path="/lineitems" z="DQ8Ajy3ydaOvVKHLJy1c2rAq2AY=">
+            <table:column id="c_toto_domain_LineItem_price" property="price" z="FosJeNKHep/YstOlfBVuEI2jeJw="/>
+            <table:column id="c_toto_domain_LineItem_quantity" property="quantity" z="tqBY01ZiMxz0pyVT+7OZzx/lkws="/>
+            <table:column id="c_toto_domain_LineItem_sc" property="sc" z="GbXXotGbD6JtHslWpaAkt/GWrWo="/>
+            <table:column id="c_toto_domain_LineItem_product" property="product" z="Syk/qymxUpRjLXKnE6GbthDw1rk="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_toto_domain_Payment" object="${payment}" path="/payments" z="WbJOnaZf7xQcFygi8ZQn2VoO3A8=">
+        <field:display field="details" id="s_toto_domain_Payment_details" object="${payment}" z="5rGhBCzZdlOkSpLIlCTfpd6nhnY="/>
+        <field:display date="true" dateTimePattern="${payment_paiddate_date_format}" field="paidDate" id="s_toto_domain_Payment_paidDate" object="${payment}" z="9ID3Am/Yp0f4dtVsmlAoHNB4lyk="/>
+        <field:display field="total" id="s_toto_domain_Payment_total" object="${payment}" z="WIdbtxWCnYDUWalM6lqOlSdf4Rg="/>
+        <field:display field="myorder" id="s_toto_domain_Payment_Myorder" object="${payment}" z="SHTrDTVsINtss4YWd+i58zXJi5k="/>
+        <field:display field="account" id="s_toto_domain_Payment_account" object="${payment}" z="o+QXnRQU6FfKrwL2+R/3aqJFH3Q="/>
+    </page:show>
+</div>
