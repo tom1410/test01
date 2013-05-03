@@ -3,10 +3,16 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
 
-	<persistence-unit name="tOTOUnit" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="com.genmymodel.shoppingcartUnit" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>tOTO.domain.MyClass2</class>
-		<class>tOTO.domain.MyClass</class>
+		<class>com.genmymodel.shoppingcart.WebUser</class>
+		<class>com.genmymodel.shoppingcart.Product</class>
+		<class>com.genmymodel.shoppingcart.Payment</class>
+		<class>com.genmymodel.shoppingcart.Account</class>
+		<class>com.genmymodel.shoppingcart.LineItem</class>
+		<class>com.genmymodel.shoppingcart.Order</class>
+		<class>com.genmymodel.shoppingcart.Customer</class>
+		<class>com.genmymodel.shoppingcart.ShoppinCart</class>
 		
 		<properties>
 	      <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>

@@ -1,0 +1,36 @@
+
+Fri May 03 18:51:04 CEST 2013
+================================================================================
+Start of user code for plugins
+		  	-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<!--
+				* End of user code
+Start of user code for project
+	  -->
+	<packaging>war</packaging>
+	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<properties>
+		<java-version>1.7</java-version>
+	</properties>
+	<!--
+		* End of user code
+Start of user code for dependencies
+		  -->
+		<!--
+			* End of user code
+Start of user code for build
+		  -->
+		<!--
+			* End of user code
