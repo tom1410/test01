@@ -1,9 +1,9 @@
 	Source code generated from GenMyModel (http://www.genmymodel.com)
 
 This is about:
-
--How to preserve your changes when generating code several times
--Compile using Maven
+	How to preserve your changes when generating code several times
+	Compile using Maven
+	Generate your database schema
 
 CODE PRESERVATION
 
@@ -31,3 +31,11 @@ COMPILATION (using pom.xml, Maven required)
 	The generated pom.xml can be used to compile. Just run:
 	$ mvn compile
 	Files *.classes will be present in 'target/classes'.
+
+GENERATE DATABASE SCHEMA (using pom.xml, Maven required)
+
+	You can generated your database schema using source code
+	existing JPA annotation. Just run:
+	$ mvn compile hibernate3:hbm2ddl
+	File schema.ddl will be present in 'target/hibernate3/sql'.
+	Schema name can be changed in the 'pom.xml'.

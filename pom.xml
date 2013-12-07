@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>com.genmymodel.shoppingcart</artifactId>
-	<name>com.genmymodel.shoppingcart</name>
-	<groupId>com.genmymodel.shoppingcart</groupId>
+	<artifactId>test1</artifactId>
+	<name>test1</name>
+	<groupId>test1</groupId>
 	<!--
 		* Start of user code for project
 	  -->
@@ -36,7 +36,7 @@
 			<!--
 				* End of user code for plugins
 		  	-->		
-			</plugins>
+		</plugins>
 		<!--
 			* Start of user code for build
 		  -->
