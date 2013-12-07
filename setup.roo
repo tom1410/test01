@@ -1,4 +1,4 @@
-project --topLevelPackage com.genmymodel.shoppingcart --projectName com.genmymodel.shoppingcart
+project --topLevelPackage test1 --projectName test1
 
 jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
 

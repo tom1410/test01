@@ -74,3 +74,23 @@ web mvc language --code en
 // script --file webmvc.roo
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-04-26 11:15:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-07 12:59:59
+// [failed] script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-07 13:00:04
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-07 13:00:06
+entity jpa --class ~.domain.MyClass  --sequenceName MYCLASS_SEQ
+ field other --fieldName Myattribute --type java.lang.Byte --notNull
+entity jpa --class ~.domain.mypackage.MyClass2  --sequenceName MYCLASS2_SEQ
+ field other --fieldName attribute3 --type MyClass  --notNull
+ field number --fieldName attribute2 --type java.lang.Long --primitive --notNull
+ field string --fieldName Myattribute --notNull
+field reference --fieldName myClass2 --type ~.domain.mypackage.MyClass2 --class  ~.domain.MyClass --cardinality ONE_TO_ONE
+field reference --fieldName myClass --type ~.domain.MyClass --class  ~.domain.mypackage.MyClass2 --cardinality ONE_TO_ONE
+// script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-07 13:00:12
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-12-07 13:00:14
+// [failed] script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-12-07 13:00:19
