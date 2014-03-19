@@ -5,17 +5,17 @@
 
 	<persistence-unit name="designPatternsUnit" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>designPatterns.domain.observer.ConcreteSubject</class>
 		<class>designPatterns.domain.adapter.Adaptee</class>
-		<class>designPatterns.domain.observer.ConcreteObserver</class>
 		<class>designPatterns.domain.singleton.Singleton</class>
 		<class>designPatterns.domain.bridge.RefinedAbstraction</class>
-		<class>designPatterns.domain.adapter.Client</class>
-		<class>designPatterns.domain.bridge.ConcreteImplementor</class>
-		<class>designPatterns.domain.observer.ConcreteSubject</class>
+		<class>designPatterns.domain.observer.ConcreteObserver</class>
 		<class>designPatterns.domain.factory.Product</class>
 		<class>designPatterns.domain.state.StateA</class>
 		<class>designPatterns.domain.bridge.Abstraction</class>
 		<class>designPatterns.domain.factory.CreatorImpl</class>
+		<class>designPatterns.domain.adapter.Client</class>
+		<class>designPatterns.domain.bridge.ConcreteImplementor</class>
 		<class>designPatterns.domain.adapter.AdapterImpl</class>
 		<class>designPatterns.domain.state.Context</class>
 		<class>designPatterns.domain.state.StateB</class>

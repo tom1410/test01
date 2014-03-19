@@ -50,6 +50,17 @@ public class Singleton
 		// TODO : to implement
 		return new Singleton();	
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	 
+	private Singleton getInstance() {
+		return this.instance;	
+	}
 	
 	/**
 	 * <!-- begin-user-doc -->
