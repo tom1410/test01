@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>test1</artifactId>
-	<name>test1</name>
-	<groupId>test1</groupId>
+	<artifactId>designPatterns</artifactId>
+	<name>designPatterns</name>
+	<groupId>designPatterns</groupId>
 	<!--
 		* Start of user code for project
 	  -->
@@ -50,10 +51,5 @@
 		<!--
 			* End of user code for dependencies
 		  -->
-	<dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.0.0.GA</version>
-        </dependency>
-    </dependencies>
+	</dependencies>
 </project>
