@@ -71,7 +71,7 @@ public class Customer
 	 */
 	
 	public boolean isVIP() {
-		// TODO : to implement
+		// TODO implement me
 		return false;	
 	}
 	

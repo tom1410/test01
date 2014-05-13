@@ -34,8 +34,8 @@ public class LineItem
 	 * @ordered
 	 */
 	
-	public ShoppinCart sc;
-	
+	public Product product;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -43,7 +43,7 @@ public class LineItem
 	 * @ordered
 	 */
 	
-	public Product product;
+	public ShoppinCart sc;
 	
 	/**
 	 * <!-- begin-user-doc -->

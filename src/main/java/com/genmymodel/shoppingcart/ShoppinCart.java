@@ -28,17 +28,8 @@ public class ShoppinCart
 	 * @ordered
 	 */
 	
-	public Set<LineItem> items;
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
 	public Account account;
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -46,7 +37,7 @@ public class ShoppinCart
 	 * @ordered
 	 */
 	
-	public WebUser webuser;
+	public Set<LineItem> items;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,7 +56,7 @@ public class ShoppinCart
 	 */
 	
 	public void operation() {
-		// TODO : to implement	
+		// TODO implement me	
 	}
 	
 }

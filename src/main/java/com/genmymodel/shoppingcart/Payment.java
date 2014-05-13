@@ -73,7 +73,7 @@ public class Payment
 	 */
 	
 	public void operation(Customer parameter, String parameter2, UserState parameter3, UserState parameter4, long parameter5) {
-		// TODO : to implement	
+		// TODO implement me	
 	}
 	
 }
