@@ -2,6 +2,7 @@ package com.genmymodel.shoppingcart;
 
 
 /**
+ * The website visitor, considered not logged in yet.
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -19,6 +20,7 @@ public class WebUser
 	protected String login;
 	
 	/**
+	 * Should be encrypted
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -52,8 +54,8 @@ public class WebUser
 	 * @ordered
 	 */
 	
-	public ShoppinCart shoppincart;
-	
+	public ShoppingCart shoppingCart;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

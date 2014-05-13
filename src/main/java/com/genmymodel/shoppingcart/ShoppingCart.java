@@ -1,15 +1,17 @@
 package com.genmymodel.shoppingcart;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.Date;
 
 
 /**
+ * The entity ShoppingCart is related to one Account, one WebUser and references several LineItem.&nbsp;
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
  */
 
-public class Product
+public class ShoppingCart
 {
 	/**
 	 * <!-- begin-user-doc -->
@@ -18,7 +20,7 @@ public class Product
 	 * @ordered
 	 */
 	
-	public String name;
+	public Date creationDate;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -27,7 +29,7 @@ public class Product
 	 * @ordered
 	 */
 	
-	public String description;
+	public Account account;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -36,14 +38,23 @@ public class Product
 	 * @ordered
 	 */
 	
-	public Set<LineItem> lineItems;
-
+	public WebUser webUser;
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
+	public Set<LineItem> items;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public Product(){
+	public ShoppingCart(){
 		super();
 	}
 

@@ -5,6 +5,7 @@ import java.util.Date;
 
 
 /**
+ * Notice the aggregation from Customer. No account without a Customer. Account can be closed. Most of the time both Account and Customer stay in the database even when the customer unsuscribe/leave the shop.&nbsp;<div><br></div>
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -55,6 +56,24 @@ public class Account
 	 * @ordered
 	 */
 	
+	public Set<Order> order;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
+	public ShoppingCart cart;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	
 	public Customer customer;
 
 	/**
@@ -64,25 +83,7 @@ public class Account
 	 * @ordered
 	 */
 	
-	public ShoppinCart cart;
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public Set<Payment> payment;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public Set<Order> order;
+	public Set<Payment> p;
 	
 	/**
 	 * <!-- begin-user-doc -->

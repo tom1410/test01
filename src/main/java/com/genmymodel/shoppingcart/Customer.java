@@ -2,6 +2,7 @@ package com.genmymodel.shoppingcart;
 
 
 /**
+ * Represents the webuser when he signs in.
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -43,8 +44,8 @@ public class Customer
 	 * @ordered
 	 */
 	
-	public Account acc;
-	
+	public WebUser webUser;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -52,8 +53,8 @@ public class Customer
 	 * @ordered
 	 */
 	
-	public WebUser webuser;
-	
+	public Account account;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

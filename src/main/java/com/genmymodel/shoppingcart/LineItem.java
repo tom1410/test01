@@ -2,6 +2,7 @@ package com.genmymodel.shoppingcart;
 
 
 /**
+ * Differentiated from Product to introduce quantity.
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -10,6 +11,7 @@ package com.genmymodel.shoppingcart;
 public class LineItem
 {
 	/**
+	 * The number of products
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -43,7 +45,7 @@ public class LineItem
 	 * @ordered
 	 */
 	
-	public ShoppinCart sc;
+	public ShoppingCart sc;
 	
 	/**
 	 * <!-- begin-user-doc -->

@@ -5,6 +5,7 @@ import java.util.Date;
 
 
 /**
+ * When the ShoppingCart with the LineItems are confirmed by the WebUser, an Order is created.&nbsp;
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -13,6 +14,7 @@ import java.util.Date;
 public class Order
 {
 	/**
+	 * <u>Id</u>
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated

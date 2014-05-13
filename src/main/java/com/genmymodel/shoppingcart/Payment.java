@@ -44,7 +44,7 @@ public class Payment
 	 * @ordered
 	 */
 	
-	public Account account;
+	public Order order;
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -53,8 +53,8 @@ public class Payment
 	 * @ordered
 	 */
 	
-	public Order order;
-	
+	public Account acc;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -62,18 +62,6 @@ public class Payment
 	 */
 	public Payment(){
 		super();
-	}
-
-	/**
-	 * xsx&lt;x<div><br></div><div>x</div><div>&lt;x</div><div>&lt;</div><div>x&lt;w</div><div>x&lt;w</div><div>x</div><div>&lt;w</div><div>xw</div><div>sq</div><div>fs</div><div>df</div><div><br></div>
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	public void operation(Customer parameter, String parameter2, UserState parameter3, UserState parameter4, long parameter5) {
-		// TODO implement me	
 	}
 	
 }
