@@ -2,6 +2,7 @@ package com.genmymodel.shoppingcart.domain;
 
 
 /**
+ * The website visitor, considered not logged in yet.
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -18,6 +19,7 @@ public class WebUser
 	
 	protected String login;
 	/**
+	 * Should be encrypted
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -31,6 +33,7 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
+	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	@javax.persistence.Column(name = "STATECOLUMN")
 	protected UserState state;
 	/**
@@ -47,16 +50,18 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.OneToOne(optional = true)
-	protected ShoppinCart shoppincart;
+	 
+	@javax.persistence.OneToOne 
+	protected ShoppingCart shoppingCart;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -64,7 +69,7 @@ public class WebUser
 	 * @generated
 	 */
 	public WebUser(){
-		
+		super();
 	}
 
 	/**
@@ -80,7 +85,7 @@ public class WebUser
 					Customer oldcustomer = this.customer;
 					this.customer = myCustomer;
 					if (oldcustomer != null)
-						oldcustomer.unsetWebuser();
+						oldcustomer.unsetWebUser();
 				}
 			}
 		}	
@@ -92,19 +97,19 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
-	public void basicSetShoppincart(ShoppinCart myShoppincart) {
-		if (this.shoppincart != myShoppincart) {
-			if (myShoppincart != null){
-				if (this.shoppincart != myShoppincart) {
-					ShoppinCart oldshoppincart = this.shoppincart;
-					this.shoppincart = myShoppincart;
-					if (oldshoppincart != null)
-						oldshoppincart.unsetWebuser();
+	public void basicSetShoppingCart(ShoppingCart myShoppingCart) {
+		if (this.shoppingCart != myShoppingCart) {
+			if (myShoppingCart != null){
+				if (this.shoppingCart != myShoppingCart) {
+					ShoppingCart oldshoppingCart = this.shoppingCart;
+					this.shoppingCart = myShoppingCart;
+					if (oldshoppingCart != null)
+						oldshoppingCart.unsetWebUser();
 				}
 			}
 		}	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -151,10 +156,10 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
-	public ShoppinCart getShoppincart() {
-		return this.shoppincart;	
+	public ShoppingCart getShoppingCart() {
+		return this.shoppingCart;	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -203,7 +208,7 @@ public class WebUser
 	 */
 	public void setCustomer(Customer myCustomer) {
 		this.basicSetCustomer(myCustomer);
-		myCustomer.basicSetWebuser(this);
+		myCustomer.basicSetWebUser(this);
 			
 	}
 	
@@ -213,22 +218,12 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
-	public void setShoppincart(ShoppinCart myShoppincart) {
-		this.basicSetShoppincart(myShoppincart);
-		myShoppincart.basicSetWebuser(this);
+	public void setShoppingCart(ShoppingCart myShoppingCart) {
+		this.basicSetShoppingCart(myShoppingCart);
+		myShoppingCart.basicSetWebUser(this);
 			
 	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void setId(long myId) {
-		this.id = myId;	
-	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -270,7 +265,7 @@ public class WebUser
 			return;
 		Customer oldcustomer = this.customer;
 		this.customer = null;
-		oldcustomer.unsetWebuser();	
+		oldcustomer.unsetWebUser();	
 	}
 	
 	/**
@@ -279,22 +274,12 @@ public class WebUser
 	 * @generated
 	 * @ordered
 	 */
-	public void unsetShoppincart() {
-		if (this.shoppincart == null)
+	public void unsetShoppingCart() {
+		if (this.shoppingCart == null)
 			return;
-		ShoppinCart oldshoppincart = this.shoppincart;
-		this.shoppincart = null;
-		oldshoppincart.unsetWebuser();	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void unsetId() {
-		this.id = 0L;	
+		ShoppingCart oldshoppingCart = this.shoppingCart;
+		this.shoppingCart = null;
+		oldshoppingCart.unsetWebUser();	
 	}
 	
 }

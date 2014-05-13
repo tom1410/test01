@@ -2,6 +2,7 @@ package com.genmymodel.shoppingcart.domain;
 
 
 /**
+ * Differentiated from Product to introduce quantity.
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -10,6 +11,7 @@ package com.genmymodel.shoppingcart.domain;
 public class LineItem
 {
 	/**
+	 * The number of products
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -32,6 +34,7 @@ public class LineItem
 	 * @ordered
 	 */
 	@javax.persistence.ManyToOne
+	@javax.persistence.JoinColumn(nullable = false)
 	protected Product product;
 	/**
 	 * <!-- begin-user-doc -->
@@ -40,15 +43,17 @@ public class LineItem
 	 * @ordered
 	 */
 	@javax.persistence.ManyToOne
-	protected ShoppinCart sc;
+	@javax.persistence.JoinColumn(nullable = false)
+	protected ShoppingCart sc;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,7 +61,7 @@ public class LineItem
 	 * @generated
 	 */
 	public LineItem(){
-		
+		super();
 	}
 
 	/**
@@ -72,7 +77,7 @@ public class LineItem
 					Product oldproduct = this.product;
 					this.product = myProduct;
 					if (oldproduct != null)
-						oldproduct.removeItem(this);
+						oldproduct.removeLineItems(this);
 				}
 			}
 		}	
@@ -84,11 +89,11 @@ public class LineItem
 	 * @generated
 	 * @ordered
 	 */
-	public void basicSetSc(ShoppinCart mySc) {
+	public void basicSetSc(ShoppingCart mySc) {
 		if (this.sc != mySc) {
 			if (mySc != null){
 				if (this.sc != mySc) {
-					ShoppinCart oldsc = this.sc;
+					ShoppingCart oldsc = this.sc;
 					this.sc = mySc;
 					if (oldsc != null)
 						oldsc.removeItems(this);
@@ -96,7 +101,7 @@ public class LineItem
 			}
 		}	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -133,7 +138,7 @@ public class LineItem
 	 * @generated
 	 * @ordered
 	 */
-	public ShoppinCart getSc() {
+	public ShoppingCart getSc() {
 		return this.sc;	
 	}
 	
@@ -175,7 +180,7 @@ public class LineItem
 	 */
 	public void setProduct(Product myProduct) {
 		this.basicSetProduct(myProduct);
-		myProduct.addItem(this);	
+		myProduct.addLineItems(this);	
 	}
 	
 	/**
@@ -184,21 +189,11 @@ public class LineItem
 	 * @generated
 	 * @ordered
 	 */
-	public void setSc(ShoppinCart mySc) {
+	public void setSc(ShoppingCart mySc) {
 		this.basicSetSc(mySc);
 		mySc.addItems(this);	
 	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void setId(long myId) {
-		this.id = myId;	
-	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -230,7 +225,7 @@ public class LineItem
 			return;
 		Product oldproduct = this.product;
 		this.product = null;
-		oldproduct.removeItem(this);	
+		oldproduct.removeLineItems(this);	
 	}
 	
 	/**
@@ -242,19 +237,9 @@ public class LineItem
 	public void unsetSc() {
 		if (this.sc == null)
 			return;
-		ShoppinCart oldsc = this.sc;
+		ShoppingCart oldsc = this.sc;
 		this.sc = null;
 		oldsc.removeItems(this);	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void unsetId() {
-		this.id = 0L;	
 	}
 	
 }

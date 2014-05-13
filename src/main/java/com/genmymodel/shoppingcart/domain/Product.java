@@ -33,16 +33,18 @@ public class Product
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.OneToMany(mappedBy = "product")
-	protected Set<LineItem> item;
+	 
+	@javax.persistence.OneToMany 
+	protected Set<LineItem> lineItems;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -50,7 +52,7 @@ public class Product
 	 * @generated
 	 */
 	public Product(){
-		
+		super();
 	}
 
 	/**
@@ -79,13 +81,13 @@ public class Product
 	 * @generated
 	 * @ordered
 	 */
-	public Set<LineItem> getItem() {
-		if(this.item == null) {
-				this.item = new HashSet<LineItem>();
+	public Set<LineItem> getLineItems() {
+		if(this.lineItems == null) {
+				this.lineItems = new HashSet<LineItem>();
 		}
-		return (Set<LineItem>) this.item;	
+		return (Set<LineItem>) this.lineItems;	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -102,29 +104,29 @@ public class Product
 	 * @generated
 	 * @ordered
 	 */
-	public void addAllItem(Set<LineItem> newItem) {
-		if (this.item == null) {
-			this.item = new HashSet<LineItem>();
+	public void addAllLineItems(Set<LineItem> newLineItems) {
+		if (this.lineItems == null) {
+			this.lineItems = new HashSet<LineItem>();
 		}
-		for (LineItem tmp : newItem)
+		for (LineItem tmp : newLineItems)
 			tmp.setProduct(this);
 			
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
-	public void removeAllItem(Set<LineItem> newItem) {
-		if(this.item == null) {
+	public void removeAllLineItems(Set<LineItem> newLineItems) {
+		if(this.lineItems == null) {
 			return;
 		}
 		
-		this.item.removeAll(newItem);	
+		this.lineItems.removeAll(newLineItems);	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -151,25 +153,15 @@ public class Product
 	 * @generated
 	 * @ordered
 	 */
-	public void addItem(LineItem newItem) {
-		if(this.item == null) {
-			this.item = new HashSet<LineItem>();
+	public void addLineItems(LineItem newLineItems) {
+		if(this.lineItems == null) {
+			this.lineItems = new HashSet<LineItem>();
 		}
 		
-		if (this.item.add(newItem))
-			newItem.basicSetProduct(this);	
+		if (this.lineItems.add(newLineItems))
+			newLineItems.basicSetProduct(this);	
 	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void setId(long myId) {
-		this.id = myId;	
-	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -196,23 +188,13 @@ public class Product
 	 * @generated
 	 * @ordered
 	 */
-	public void removeItem(LineItem oldItem) {
-		if(this.item == null)
+	public void removeLineItems(LineItem oldLineItems) {
+		if(this.lineItems == null)
 			return;
 		
-		if (this.item.remove(oldItem))
-			oldItem.unsetProduct();
+		if (this.lineItems.remove(oldLineItems))
+			oldLineItems.unsetProduct();
 			
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void unsetId() {
-		this.id = 0L;	
 	}
 	
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 
 
 /**
+ * Notice the aggregation from Customer. No account without a Customer. Account can be closed. Most of the time both Account and Customer stay in the database even when the customer unsuscribe/leave the shop.&nbsp;<div><br></div>
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -26,6 +27,7 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
+	@javax.persistence.Temporal(javax.persistence.TemporalType.DATE)
 	@javax.persistence.Column(name = "OPENCOLUMN")
 	protected Date open;
 	/**
@@ -35,6 +37,7 @@ public class Account
 	 * @ordered
 	 */
 	
+	@javax.persistence.Temporal(javax.persistence.TemporalType.DATE)
 	protected Date closed;
 	/**
 	 * <!-- begin-user-doc -->
@@ -51,7 +54,7 @@ public class Account
 	 * @ordered
 	 */
 	@javax.persistence.OneToOne(optional = false, cascade = javax.persistence.CascadeType.ALL)
-	protected ShoppinCart cart;
+	protected ShoppingCart cart;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -66,14 +69,6 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.OneToMany(mappedBy = "account")
-	protected Set<Payment> payment;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	@javax.persistence.OneToMany(mappedBy = "account", cascade = javax.persistence.CascadeType.ALL)
 	protected Set<Order> order;
 	/**
@@ -82,8 +77,18 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	 
+	@javax.persistence.OneToMany(mappedBy = "acc") 
+	protected Set<Payment> p;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,7 +96,7 @@ public class Account
 	 * @generated
 	 */
 	public Account(){
-		
+		super();
 	}
 
 	/**
@@ -100,11 +105,11 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public void basicSetCart(ShoppinCart myCart) {
+	public void basicSetCart(ShoppingCart myCart) {
 		if (this.cart != myCart) {
 			if (myCart != null){
 				if (this.cart != myCart) {
-					ShoppinCart oldcart = this.cart;
+					ShoppingCart oldcart = this.cart;
 					this.cart = myCart;
 					if (oldcart != null)
 						oldcart.unsetAccount();
@@ -112,7 +117,7 @@ public class Account
 			}
 		}	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -126,7 +131,7 @@ public class Account
 					Customer oldcustomer = this.customer;
 					this.customer = myCustomer;
 					if (oldcustomer != null)
-						oldcustomer.unsetAcc();
+						oldcustomer.unsetAccount();
 				}
 			}
 		}	
@@ -178,7 +183,7 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public ShoppinCart getCart() {
+	public ShoppingCart getCart() {
 		return this.cart;	
 	}
 	
@@ -190,19 +195,6 @@ public class Account
 	 */
 	public Customer getCustomer() {
 		return this.customer;	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public Set<Payment> getPayment() {
-		if(this.payment == null) {
-				this.payment = new HashSet<Payment>();
-		}
-		return (Set<Payment>) this.payment;	
 	}
 	
 	/**
@@ -224,23 +216,21 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public long getId() {
-		return this.id;	
+	public Set<Payment> getP() {
+		if(this.p == null) {
+				this.p = new HashSet<Payment>();
+		}
+		return (Set<Payment>) this.p;	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
-	public void addAllPayment(Set<Payment> newPayment) {
-		if (this.payment == null) {
-			this.payment = new HashSet<Payment>();
-		}
-		for (Payment tmp : newPayment)
-			tmp.setAccount(this);
-			
+	public long getId() {
+		return this.id;	
 	}
 	
 	/**
@@ -264,14 +254,15 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public void removeAllPayment(Set<Payment> newPayment) {
-		if(this.payment == null) {
-			return;
+	public void addAllP(Set<Payment> newP) {
+		if (this.p == null) {
+			this.p = new HashSet<Payment>();
 		}
-		
-		this.payment.removeAll(newPayment);	
+		for (Payment tmp : newP)
+			tmp.setAcc(this);
+			
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -286,6 +277,20 @@ public class Account
 		this.order.removeAll(newOrder);	
 	}
 	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	public void removeAllP(Set<Payment> newP) {
+		if(this.p == null) {
+			return;
+		}
+		
+		this.p.removeAll(newP);	
+	}
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -332,12 +337,12 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public void setCart(ShoppinCart myCart) {
+	public void setCart(ShoppingCart myCart) {
 		this.basicSetCart(myCart);
 		myCart.basicSetAccount(this);
 			
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -346,23 +351,8 @@ public class Account
 	 */
 	public void setCustomer(Customer myCustomer) {
 		this.basicSetCustomer(myCustomer);
-		myCustomer.basicSetAcc(this);
+		myCustomer.basicSetAccount(this);
 			
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void addPayment(Payment newPayment) {
-		if(this.payment == null) {
-			this.payment = new HashSet<Payment>();
-		}
-		
-		if (this.payment.add(newPayment))
-			newPayment.basicSetAccount(this);	
 	}
 	
 	/**
@@ -386,10 +376,15 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public void setId(long myId) {
-		this.id = myId;	
+	public void addP(Payment newP) {
+		if(this.p == null) {
+			this.p = new HashSet<Payment>();
+		}
+		
+		if (this.p.add(newP))
+			newP.basicSetAcc(this);	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -439,7 +434,7 @@ public class Account
 	public void unsetCart() {
 		if (this.cart == null)
 			return;
-		ShoppinCart oldcart = this.cart;
+		ShoppingCart oldcart = this.cart;
 		this.cart = null;
 		oldcart.unsetAccount();	
 	}
@@ -455,22 +450,7 @@ public class Account
 			return;
 		Customer oldcustomer = this.customer;
 		this.customer = null;
-		oldcustomer.unsetAcc();	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void removePayment(Payment oldPayment) {
-		if(this.payment == null)
-			return;
-		
-		if (this.payment.remove(oldPayment))
-			oldPayment.unsetAccount();
-			
+		oldcustomer.unsetAccount();	
 	}
 	
 	/**
@@ -494,8 +474,13 @@ public class Account
 	 * @generated
 	 * @ordered
 	 */
-	public void unsetId() {
-		this.id = 0L;	
+	public void removeP(Payment oldP) {
+		if(this.p == null)
+			return;
+		
+		if (this.p.remove(oldP))
+			oldP.unsetAcc();
+			
 	}
 	
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 
 
 /**
+ * When the ShoppingCart with the LineItems are confirmed by the WebUser, an Order is created.&nbsp;
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -13,6 +14,7 @@ import java.util.Date;
 public class Order
 {
 	/**
+	 * <u>Id</u>
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -27,6 +29,7 @@ public class Order
 	 * @ordered
 	 */
 	
+	@javax.persistence.Temporal(javax.persistence.TemporalType.DATE)
 	protected Date ordered;
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +62,7 @@ public class Order
 	 * @ordered
 	 */
 	
+	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	protected OrderStatus status;
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,15 +70,8 @@ public class Order
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.ManyToMany@javax.persistence.JoinTable(name = "ORDER_ITEMS")
-	protected Set<LineItem> items;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	@javax.persistence.ManyToOne
+	@javax.persistence.JoinColumn(nullable = false)
 	protected Account account;
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,8 +79,19 @@ public class Order
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	@javax.persistence.OneToMany
+	@javax.persistence.ManyToMany@javax.persistence.JoinTable(name = "ORDER_ITEMS")
+	@javax.persistence.JoinColumn(nullable = false)
+	protected Set<LineItem> items;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 * @ordered
+	 */
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,7 +99,7 @@ public class Order
 	 * @generated
 	 */
 	public Order(){
-		
+		super();
 	}
 
 	/**
@@ -324,16 +332,6 @@ public class Order
 	 * @generated
 	 * @ordered
 	 */
-	public void setId(long myId) {
-		this.id = myId;	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	public void unsetNumber() {
 		this.number = null;	
 	}
@@ -413,16 +411,6 @@ public class Order
 		Account oldaccount = this.account;
 		this.account = null;
 		oldaccount.removeOrder(this);	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void unsetId() {
-		this.id = 0L;	
 	}
 	
 }

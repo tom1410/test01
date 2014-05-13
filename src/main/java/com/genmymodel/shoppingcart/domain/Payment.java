@@ -17,6 +17,7 @@ public class Payment
 	 * @ordered
 	 */
 	
+	@javax.persistence.Temporal(javax.persistence.TemporalType.DATE)
 	protected Date paidDate;
 	/**
 	 * <!-- begin-user-doc -->
@@ -40,14 +41,17 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.ManyToOne
-	protected Account account;
+	 
+	@javax.persistence.ManyToOne 
+	@javax.persistence.JoinColumn(nullable = false) 
+	protected Account acc;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 * @ordered
 	 */
+	@javax.persistence.OneToOne
 	@javax.persistence.ManyToOne
 	protected Order order;
 	/**
@@ -56,8 +60,9 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	@javax.persistence.Id@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	protected Long id;
+	@javax.persistence.Id@javax.persistence.Column(nullable = false)
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
+	protected final Long id = 0L;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,7 +70,7 @@ public class Payment
 	 * @generated
 	 */
 	public Payment(){
-		
+		super();
 	}
 
 	/**
@@ -74,19 +79,19 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	public void basicSetAccount(Account myAccount) {
-		if (this.account != myAccount) {
-			if (myAccount != null){
-				if (this.account != myAccount) {
-					Account oldaccount = this.account;
-					this.account = myAccount;
-					if (oldaccount != null)
-						oldaccount.removePayment(this);
+	public void basicSetAcc(Account myAcc) {
+		if (this.acc != myAcc) {
+			if (myAcc != null){
+				if (this.acc != myAcc) {
+					Account oldacc = this.acc;
+					this.acc = myAcc;
+					if (oldacc != null)
+						oldacc.removeP(this);
 				}
 			}
 		}	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -123,10 +128,10 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	public Account getAccount() {
-		return this.account;	
+	public Account getAcc() {
+		return this.acc;	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -183,11 +188,11 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	public void setAccount(Account myAccount) {
-		this.basicSetAccount(myAccount);
-		myAccount.addPayment(this);	
+	public void setAcc(Account myAcc) {
+		this.basicSetAcc(myAcc);
+		myAcc.addP(this);	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -196,16 +201,6 @@ public class Payment
 	 */
 	public void setOrder(Order myOrder) {
 		this.order = myOrder;	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void setId(long myId) {
-		this.id = myId;	
 	}
 	
 	/**
@@ -244,14 +239,14 @@ public class Payment
 	 * @generated
 	 * @ordered
 	 */
-	public void unsetAccount() {
-		if (this.account == null)
+	public void unsetAcc() {
+		if (this.acc == null)
 			return;
-		Account oldaccount = this.account;
-		this.account = null;
-		oldaccount.removePayment(this);	
+		Account oldacc = this.acc;
+		this.acc = null;
+		oldacc.removeP(this);	
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -260,16 +255,6 @@ public class Payment
 	 */
 	public void unsetOrder() {
 		this.order = new Order();	
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public void unsetId() {
-		this.id = 0L;	
 	}
 	
 }
